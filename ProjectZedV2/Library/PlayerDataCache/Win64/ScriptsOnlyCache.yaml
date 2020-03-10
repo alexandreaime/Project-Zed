@@ -4,6 +4,9 @@ ScriptsOnlyBuild:
     - PlayerController
     - PlayerMotor
     - PlayerSetup
+    - PlayerShoot
+    Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.RiderScriptEditorData
     Unity.TextMeshPro.dll:
     - TMPro.TMP_ColorGradient
     - TMPro.TMP_FontAsset
@@ -12,7 +15,9 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     com.unity.multiplayer-hlapi.Runtime.dll:
+    - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
     - UnityEngine.Networking.NetworkManager
     - UnityEngine.Networking.NetworkManagerHUD
@@ -81,6 +86,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11664}
     - Class: 114
       Script: {instanceID: 11800}
+    - Class: 114
+      Script: {instanceID: 14344}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -89,13 +96,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
-    - Class: 154
-      Script: {instanceID: 0}
-    - Class: 156
-      Script: {instanceID: 0}
     - Class: 157
-      Script: {instanceID: 0}
-    - Class: 218
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -652,7 +653,7 @@ ScriptsOnlyBuild:
     className: Benchmark02
   - hash:
       serializedVersion: 2
-      Hash: b93532430f519ca6f8a812b1c210423c
+      Hash: 6437a6c73069d22dee8783fb92ae347b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerSetup
@@ -836,6 +837,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMotor
+  - hash:
+      serializedVersion: 2
+      Hash: 6f71e653f97f781051c20f7c6c5e47ea
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerShoot
   platform: 19
   scenePathNames:
   - Assets/MainLevel01.unity
