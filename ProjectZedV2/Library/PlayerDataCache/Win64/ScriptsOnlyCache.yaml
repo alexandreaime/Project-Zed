@@ -1,6 +1,8 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - GameManager
+    - Player
     - PlayerController
     - PlayerMotor
     - PlayerSetup
@@ -65,29 +67,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9980}
     - Class: 114
-      Script: {instanceID: 10392}
+      Script: {instanceID: 10020}
     - Class: 114
-      Script: {instanceID: 10664}
+      Script: {instanceID: 10326}
     - Class: 114
-      Script: {instanceID: 10896}
+      Script: {instanceID: 10396}
     - Class: 114
-      Script: {instanceID: 11024}
+      Script: {instanceID: 10548}
     - Class: 114
-      Script: {instanceID: 11042}
+      Script: {instanceID: 10670}
     - Class: 114
-      Script: {instanceID: 11404}
+      Script: {instanceID: 10902}
     - Class: 114
-      Script: {instanceID: 11486}
+      Script: {instanceID: 11030}
     - Class: 114
-      Script: {instanceID: 11612}
+      Script: {instanceID: 11048}
     - Class: 114
-      Script: {instanceID: 11658}
+      Script: {instanceID: 11412}
     - Class: 114
-      Script: {instanceID: 11664}
+      Script: {instanceID: 11494}
     - Class: 114
-      Script: {instanceID: 11800}
+      Script: {instanceID: 11620}
     - Class: 114
-      Script: {instanceID: 14344}
+      Script: {instanceID: 11666}
+    - Class: 114
+      Script: {instanceID: 11672}
+    - Class: 114
+      Script: {instanceID: 11808}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -227,6 +233,12 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 6f0d88143c301abdc3147ebdcf740f7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Player
+  - hash:
+      serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -311,6 +323,12 @@ ScriptsOnlyBuild:
     className: Benchmark03
   - hash:
       serializedVersion: 2
+      Hash: 8cc8998fc570a76e13419952e9119839
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerShoot
+  - hash:
+      serializedVersion: 2
       Hash: e6f0efd0e20669d577e9d21526b3d3f9
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -375,6 +393,12 @@ ScriptsOnlyBuild:
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkTransformVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -837,12 +861,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMotor
-  - hash:
-      serializedVersion: 2
-      Hash: 6f71e653f97f781051c20f7c6c5e47ea
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerShoot
   platform: 19
   scenePathNames:
   - Assets/MainLevel01.unity

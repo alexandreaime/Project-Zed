@@ -1,18 +1,28 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class Player : MonoBehaviour
+public class Player : NetworkBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private int maxHealth = 100;
+    
+    [SyncVar] private int currentHealth;
+
+    private void Awake()
     {
-        
+        SetDefaults();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void TakeDamage(int _amount)
     {
-        
+        currentHealth -= _amount;
+        Debug.Log(transform.name + "a maintenant " + currentHealth + " points de vie.");
+    }
+
+    private void SetDefaults()
+    {
+        currentHealth = maxHealth;
     }
 }
