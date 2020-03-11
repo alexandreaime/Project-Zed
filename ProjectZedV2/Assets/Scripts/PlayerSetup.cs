@@ -10,6 +10,10 @@ public class PlayerSetup : NetworkBehaviour
     [SerializeField] private Behaviour[] componentsToDisable;
 
     [SerializeField] private string remoteLayerName = "RemotePlayer";
+
+    [SerializeField] private GameObject playerUIPrefab;
+
+    private GameObject playerUIInstance;
     
     Camera sceneCamera;
 
@@ -28,6 +32,10 @@ public class PlayerSetup : NetworkBehaviour
                 sceneCamera.gameObject.SetActive(false);
             }
         }
+        
+        // Création du UI 
+        playerUIInstance = Instantiate(playerUIPrefab);
+        playerUIInstance.name = playerUIPrefab.name; // remplace le "(clone)" dans l'instance du jeu
     }
 
     public override void OnStartClient()
@@ -54,6 +62,8 @@ public class PlayerSetup : NetworkBehaviour
 
     private void OnDisable()
     {
+        Destroy(playerUIInstance);
+        
         if (sceneCamera != null)
         {
             sceneCamera.gameObject.SetActive(true);

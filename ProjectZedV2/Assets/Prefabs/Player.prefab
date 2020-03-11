@@ -431,6 +431,9 @@ MonoBehaviour:
   - {fileID: 5386062889380104974}
   - {fileID: -4395667100521247796}
   remoteLayerName: RemotePlayer
+  playerUIPrefab: {fileID: 4781650167886413934, guid: 590f0611d3bd45a46ae9dc589bacef95,
+    type: 3}
+  playerUIInstance: {fileID: 0}
 --- !u!114 &1020535981224322812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -505,6 +508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a593b87296f1ef64aa0fb958f9c32809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!1 &6959484995177313479
 GameObject:
   m_ObjectHideFlags: 0
