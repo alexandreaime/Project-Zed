@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - EnemyStill
     - GameManager
     - MainMenu
     - MouseLook
@@ -9,6 +10,10 @@ ScriptsOnlyBuild:
     - PlayerMovement
     - PlayerSetup
     - PlayerShoot
+    - PlayerStats
+    - Waypoints
+    Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.RiderScriptEditorData
     Unity.TextMeshPro.dll:
     - TMPro.TMP_ColorGradient
     - TMPro.TMP_FontAsset
@@ -176,11 +181,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11676}
     - Class: 114
       Script: {instanceID: 11740}
+    - Class: 114
+      Script: {instanceID: 14366}
+    - Class: 114
+      Script: {instanceID: 14398}
+    - Class: 114
+      Script: {instanceID: 14400}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -979,6 +992,36 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMotor
+  - hash:
+      serializedVersion: 2
+      Hash: 81c1c45195cdb2b08f859b73ff50f93e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerStats
+  - hash:
+      serializedVersion: 2
+      Hash: 5d14ab8a9e600d67d8f5d376214ca1d4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Enemy
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Waypoints
+  - hash:
+      serializedVersion: 2
+      Hash: 2fe2fdfc52e5e9a60ae89241d7a48395
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyStill
+  - hash:
+      serializedVersion: 2
+      Hash: 278a7d1b8df54e42076af9db93f86cf5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WaveSpawner
   platform: 19
   scenePathNames:
   - Assets/Scenes/Main Menu.unity
