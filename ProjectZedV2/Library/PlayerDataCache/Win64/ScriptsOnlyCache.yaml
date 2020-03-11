@@ -2,9 +2,11 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - GameManager
+    - MainMenu
+    - MouseLook
+    - PauseMenu
     - Player
-    - PlayerController
-    - PlayerMotor
+    - PlayerMovement
     - PlayerSetup
     - PlayerShoot
     Unity.TextMeshPro.dll:
@@ -13,9 +15,20 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Shadow
+    - UnityEngine.UI.Slider
+    - UnityEngine.UI.Text
     com.unity.multiplayer-hlapi.Runtime.dll:
     - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
@@ -25,7 +38,74 @@ ScriptsOnlyBuild:
     - UnityEngine.Networking.NetworkTransform
     - UnityEngine.Networking.NetworkTransformChild
   sceneClasses:
-    Assets/MainLevel01.unity:
+    Assets/Scenes/Main Menu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 109
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9708}
+    - Class: 114
+      Script: {instanceID: 9888}
+    - Class: 114
+      Script: {instanceID: 9938}
+    - Class: 114
+      Script: {instanceID: 10368}
+    - Class: 114
+      Script: {instanceID: 10398}
+    - Class: 114
+      Script: {instanceID: 10794}
+    - Class: 114
+      Script: {instanceID: 11032}
+    - Class: 114
+      Script: {instanceID: 11050}
+    - Class: 114
+      Script: {instanceID: 11246}
+    - Class: 114
+      Script: {instanceID: 11312}
+    - Class: 114
+      Script: {instanceID: 11498}
+    - Class: 114
+      Script: {instanceID: 11624}
+    - Class: 114
+      Script: {instanceID: 11680}
+    - Class: 114
+      Script: {instanceID: 11740}
+    - Class: 114
+      Script: {instanceID: 11774}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/MainLevel01.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -44,8 +124,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
     - Class: 65
@@ -56,42 +134,48 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
-    - Class: 109
-      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9752}
+      Script: {instanceID: 9708}
     - Class: 114
-      Script: {instanceID: 9910}
+      Script: {instanceID: 9888}
     - Class: 114
-      Script: {instanceID: 9990}
+      Script: {instanceID: 9900}
     - Class: 114
-      Script: {instanceID: 10402}
+      Script: {instanceID: 9938}
     - Class: 114
-      Script: {instanceID: 10674}
+      Script: {instanceID: 9974}
     - Class: 114
-      Script: {instanceID: 10906}
+      Script: {instanceID: 9982}
     - Class: 114
-      Script: {instanceID: 11034}
+      Script: {instanceID: 10022}
     - Class: 114
-      Script: {instanceID: 11052}
+      Script: {instanceID: 10294}
     - Class: 114
-      Script: {instanceID: 11414}
+      Script: {instanceID: 10328}
     - Class: 114
-      Script: {instanceID: 11496}
+      Script: {instanceID: 10368}
     - Class: 114
-      Script: {instanceID: 11622}
+      Script: {instanceID: 10550}
     - Class: 114
-      Script: {instanceID: 11668}
+      Script: {instanceID: 10672}
     - Class: 114
-      Script: {instanceID: 11674}
+      Script: {instanceID: 10794}
     - Class: 114
-      Script: {instanceID: 11810}
+      Script: {instanceID: 10904}
     - Class: 114
-      Script: {instanceID: 14252}
+      Script: {instanceID: 11060}
     - Class: 114
-      Script: {instanceID: 14254}
+      Script: {instanceID: 11312}
     - Class: 114
-      Script: {instanceID: 14256}
+      Script: {instanceID: 11358}
+    - Class: 114
+      Script: {instanceID: 11416}
+    - Class: 114
+      Script: {instanceID: 11670}
+    - Class: 114
+      Script: {instanceID: 11676}
+    - Class: 114
+      Script: {instanceID: 11740}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -100,13 +184,23 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
+    - Class: 143
+      Script: {instanceID: 0}
     - Class: 154
       Script: {instanceID: 0}
     - Class: 156
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
     - Class: 218
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     - Class: 1953259897
       Script: {instanceID: 0}
@@ -227,6 +321,12 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: 3b2bc070fef69479e4143ab92dd13ff2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenu
+  - hash:
+      serializedVersion: 2
       Hash: ad9173d3a69d99153f38ed4b62226129
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
@@ -237,6 +337,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 6f0d88143c301abdc3147ebdcf740f7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Player
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -323,6 +429,12 @@ ScriptsOnlyBuild:
     className: Benchmark03
   - hash:
       serializedVersion: 2
+      Hash: 8cc8998fc570a76e13419952e9119839
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerShoot
+  - hash:
+      serializedVersion: 2
       Hash: e6f0efd0e20669d577e9d21526b3d3f9
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -387,6 +499,12 @@ ScriptsOnlyBuild:
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkTransformVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -647,6 +765,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 655675a941ea756088027703b43352a4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MouseLook
+  - hash:
+      serializedVersion: 2
       Hash: 4d16cfbaa8e821a2b370e80844a0e9bc
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -665,7 +789,7 @@ ScriptsOnlyBuild:
     className: Benchmark02
   - hash:
       serializedVersion: 2
-      Hash: 6437a6c73069d22dee8783fb92ae347b
+      Hash: c83f4246e25b637785ea648a873f3015
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerSetup
@@ -785,6 +909,12 @@ ScriptsOnlyBuild:
     className: NetworkManagerHUD
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenu
+  - hash:
+      serializedVersion: 2
       Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -845,29 +975,12 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 218048bd93e908746781901d78cf0f9b
+      Hash: 861d107acb9ca63d8d76d4811c6a4bd6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMotor
-  - hash:
-      serializedVersion: 2
-      Hash: 6f0d88143c301abdc3147ebdcf740f7e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Player
-  - hash:
-      serializedVersion: 2
-      Hash: 8cc8998fc570a76e13419952e9119839
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerShoot
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameManager
   platform: 19
   scenePathNames:
-  - Assets/MainLevel01.unity
+  - Assets/Scenes/Main Menu.unity
+  - Assets/Scenes/MainLevel01.unity
   playerPath: C:/Users/user/Desktop/NEW ZED/projectzed2/ProjectZedV2/Build/ProjectZedV2.exe
