@@ -32,7 +32,9 @@ public class PlayerSetup : NetworkBehaviour
                 sceneCamera.gameObject.SetActive(false);
             }
         }
-        
+
+        GetComponent<Player>().Setup();
+
         // Création du UI 
         playerUIInstance = Instantiate(playerUIPrefab);
         playerUIInstance.name = playerUIPrefab.name; // remplace le "(clone)" dans l'instance du jeu
