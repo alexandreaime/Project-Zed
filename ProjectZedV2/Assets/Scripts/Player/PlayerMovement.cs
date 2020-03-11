@@ -21,15 +21,17 @@ public class PlayerMovement : MonoBehaviour
    
     void Update()
     {
+        // On vérifie si le joueur est au sol ou pas
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-
+        
         if(isGrounded && velocity.y < 0)
         {
-            velocity.y = -2f;
+            velocity.y = -2f; // lui applique la gravité
         }
-
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+        
+        // On va calculer la vélocité du joueur en un Vecteur 3D
+        float x = Input.GetAxis("Horizontal"); // -1 = gauche | 0 = le personnage ne bouge pas | 1 = droite
+        float z = Input.GetAxis("Vertical"); // -1 = recule | 0 = le personnage ne bouge pas | 1 = avance
 
         Vector3 move = transform.right * x + transform.forward * z;
 

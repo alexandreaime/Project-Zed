@@ -12,14 +12,14 @@ public class PlayerMotor : MonoBehaviour
     private Vector3 rotation;
     private Vector3 cameraRotation;
     
-    private Rigidbody rb;
-    
-    /*public float gravity = -39.24f;
-    public float jumpHeight = 3f;
+    public float gravity = -9.8f;
+    public float jumpHeight = 12f;
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
-    bool isGrounded;*/
+    bool isGrounded;
+    
+    private Rigidbody rb;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -41,19 +41,15 @@ public class PlayerMotor : MonoBehaviour
     
     private void FixedUpdate()
     {
-        PerformMovement();
-        PerformRotation();
-
-        /*isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-
-        if(isGrounded && velocity.y < 0)
-        {
-            velocity.y = -2f;
-        }
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-        }*/
+        }
+
+        PerformMovement();
+        PerformRotation();
     }
 
     private void PerformMovement()
