@@ -34,6 +34,18 @@ public class Player : NetworkBehaviour
         SetDefaults();
     }
 
+    private void Update()
+    {
+        if (!isLocalPlayer)
+        {
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            RpcTakeDamage(100000);
+        }
+    }
 
     [ClientRpc]
     public void RpcTakeDamage(int _amount)
@@ -68,7 +80,19 @@ public class Player : NetworkBehaviour
 
 
         Debug.Log(transform.name + " est mort.");
-        //APPELER LA FONCTION DE RESPAWN
+
+        StartCoroutine(Respawn());
+    }
+
+    private IEnumerator Respawn()
+    {
+        yield return new WaitForSeconds(5f);
+        SetDefaults();
+        transform _spawnPoint = NetworkManager.singleton.GetStartPosition();
+        transform.position = _spawnPoint.position;
+        transform.rotation = _spawnPoint.rotation;
+
+        Debug.Log(transform.name + " a respawn.");
     }
 
     private void SetDefaults()
