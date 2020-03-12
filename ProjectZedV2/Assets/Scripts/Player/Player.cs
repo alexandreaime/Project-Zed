@@ -81,19 +81,19 @@ public class Player : NetworkBehaviour
 
         Debug.Log(transform.name + " est mort.");
 
-        StartCoroutine(Respawn());
+        /*StartCoroutine(Respawn());*/
     }
 
-    private IEnumerator Respawn()
+    /*private IEnumerator Respawn()
     {
         yield return new WaitForSeconds(5f);
         SetDefaults();
-        transform _spawnPoint = NetworkManager.singleton.GetStartPosition();
-        transform.position = _spawnPoint.position;
-        transform.rotation = _spawnPoint.rotation;
+        transform SpawnPoint01 = NetworkManager.singleton.GetStartPosition();
+        transform.position = SpawnPoint01.position;
+        transform.rotation = SpawnPoint01.rotation;
 
         Debug.Log(transform.name + " a respawn.");
-    }
+    }*/
 
     private void SetDefaults()
     {
