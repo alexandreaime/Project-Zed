@@ -55,7 +55,7 @@ public class Player : NetworkBehaviour
             return;
         }
         currentHealth -= _amount;
-        Debug.Log(transform.name + "a maintenant " + currentHealth + " points de vie.");
+        Debug.Log(transform.name + " a maintenant " + currentHealth + " points de vie.");
 
         if(currentHealth <= 0)
         {
@@ -88,7 +88,7 @@ public class Player : NetworkBehaviour
     {
         yield return new WaitForSeconds(5f);
         SetDefaults();
-        transform _spawnPoint = NetworkManager.singleton.GetStartPosition();
+        Transform _spawnPoint = NetworkManager.singleton.GetStartPosition();
         transform.position = _spawnPoint.position;
         transform.rotation = _spawnPoint.rotation;
 

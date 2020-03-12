@@ -23,6 +23,7 @@ public class PlayerShoot : NetworkBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
+            Debug.Log("Tir effectué");
         } 
     }
 
@@ -36,6 +37,14 @@ public class PlayerShoot : NetworkBehaviour
             if (_hit.collider.tag == "Player")
             {
                 CmdPlayerShot(_hit.collider.name, weapon.damage);
+            }
+            else
+            {
+                if (_hit.collider.tag == "Enemy")
+                {
+                    Enemy enemy = _hit.transform.GetComponent<Enemy>();
+                    enemy.DestroyTransform();
+                }
             }
         }
     }
