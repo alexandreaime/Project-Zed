@@ -15,10 +15,14 @@ public class Player : NetworkBehaviour
     }
 
     [SerializeField]
-    private int maxHealth = 100;
+    public int maxHealth = 100;
+    public int maxMoney = 500;
     
     [SyncVar]
-    private int currentHealth;
+    public int currentHealth;
+    public int currentMoney;
+    
+    public List<Transform> TotalArme;
 
     [SerializeField]
     private Behaviour[] disableOnDeath;
@@ -99,6 +103,7 @@ public class Player : NetworkBehaviour
     {
         isDead = false;
         currentHealth = maxHealth;
+        currentMoney = maxMoney;
 
         for (int i = 0; i < disableOnDeath.Length; i++)
         {

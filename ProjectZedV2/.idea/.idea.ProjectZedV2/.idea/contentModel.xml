@@ -10,6 +10,10 @@
           <e p="read me.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="Arme" t="Include">
+            <e p="ArmeShop.cs" t="Include" />
+            <e p="SwitchArme.cs" t="Include" />
+          </e>
           <e p="Camera" t="Include">
             <e p="MouseLook.cs" t="Include" />
           </e>
@@ -24,6 +28,7 @@
           <e p="Menu" t="Include">
             <e p="MainMenu.cs" t="Include" />
             <e p="PauseMenu.cs" t="Include" />
+            <e p="ShopMenu.cs" t="Include" />
           </e>
           <e p="Pas utilisé" t="Include">
             <e p="CamControl.cs" t="Include" />
@@ -32,6 +37,7 @@
             <e p="ThirdPersonCameraControl.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
+            <e p="AllBar.cs" t="Include" />
             <e p="Player.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
             <e p="PlayerSetup.cs" t="Include" />

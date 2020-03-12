@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -49,6 +50,8 @@ public class PlayerSetup : NetworkBehaviour
         
         Enemy.player = _player;
         WaveSpawner.player = _player;
+        AllBar.player = _player;
+        ArmeShop.player = _player;
     }
 
     private void AssignRemoteLayer()

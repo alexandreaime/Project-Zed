@@ -571,7 +571,7 @@ MonoBehaviour:
   m_ScriptCRCCheck: 1
   m_MaxDelay: 0.01
   m_LogLevel: 2
-  m_PlayerPrefab: {fileID: 4675715492697977259, guid: 76dd13c99cc570449a20782c5700d77e,
+  m_PlayerPrefab: {fileID: 6621218836081733203, guid: 76dd13c99cc570449a20782c5700d77e,
     type: 3}
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 1

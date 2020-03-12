@@ -43,7 +43,10 @@ public class PlayerShoot : NetworkBehaviour
                 if (_hit.collider.tag == "Enemy")
                 {
                     Enemy enemy = _hit.transform.GetComponent<Enemy>();
-                    enemy.DestroyTransform();
+                    if (enemy != null)
+                    {
+                        enemy.DestroyTransform();
+                    }
                 }
             }
         }
