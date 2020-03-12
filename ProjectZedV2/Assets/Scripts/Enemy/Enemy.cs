@@ -1,65 +1,57 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [Header("Transform")]
-    public Transform target;
+    //Player
+    private Transform target;
+    public static Player player;
 
-    [Header("Calcul")]
-    public float speed = 7f;
-    public float damage = 10;
+    //Attack
+    public float speed;
+    public int damage = 1;
+    //public int health = 50;
+
+    private int id;
 
 
-    void Start()
+    void Update()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
+        if (player != null)
+        {
+            target = player.transform;
+            if (Vector3.Distance(transform.position, target.position) > 2.5f)
+            {
+                Vector3 dir = target.position - transform.position;
+                transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
+            }
+            else
+            {
+                InvokeRepeating("Attack", 0f, 1f);
+            }
+        }
     }
 
-
-    private void Update()
-    {
-        if(Vector3.Distance(transform.position, target.position) <= 2.5f)
-        {
-            Attack();
-            DestroyTransform();
-        }
-        else
-        {
-            Vector3 dir = target.position - transform.position;
-            transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
-        }
-
-    }
-
-    
     void Attack()
     {
-        float health = PlayerStats.health;
-        
-        if (PlayerStats.health > 0)
-        {
-            health -= damage * Time.deltaTime;
-
-            if (health < 0)
-            {
-                health = 0;
-            }
-
-            PlayerStats.health = health;
-        }
-        
-        if (health == 0)
-        {
-            Debug.Log("Dead !");
-        }
+        player.RpcTakeDamage(damage);
+        DestroyTransform();
     }
 
 
-    void DestroyTransform()
+    public void DestroyTransform()
     {
         Destroy(gameObject);
+        EnemyList.Remove(GetComponent<Enemy>());
+    }
+
+    public void Spawn(Vector3 position, Quaternion rotation)
+    {
+        Instantiate(transform, position, rotation);
+        EnemyList.Add(GetComponent<Enemy>());
     }
 }

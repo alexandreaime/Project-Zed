@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class EnemyStill : MonoBehaviour
 {
-    [Header("Transform")]
+    //Player
+    private Player player;
     private Transform target;
+    
+    //EnemyStill
     public Transform partToRotate;
+    public float rotationSpeed = 6.5f;
 
-    [Header("Setup")]
+    //Attack
     public float range = 10f;
-    private float turnSpeed = 6.5f;
-    public string playerTag = "Player";
+    public int damage = 1;
 
  
     void Start()
@@ -22,7 +25,7 @@ public class EnemyStill : MonoBehaviour
     //Cherche une cible dans la zone de tir
     void UpdateTarget()
     {
-        GameObject[] ennemies = GameObject.FindGameObjectsWithTag(playerTag);
+        GameObject[] ennemies = GameObject.FindGameObjectsWithTag("Player");
         GameObject nearestEnemy = null;
 
         float shortestDistance = Mathf.Infinity;
@@ -41,7 +44,7 @@ public class EnemyStill : MonoBehaviour
         if (nearestEnemy != null && shortestDistance <= range)
         {
             target = nearestEnemy.transform;
-            //Debug.Log("Cible en vue");
+            player = target.GetComponent<Player>();
         }
         else
         {
@@ -55,8 +58,13 @@ public class EnemyStill : MonoBehaviour
         if (target != null)
         {
             LockOnTarget();
-            Attack();
+            InvokeRepeating("Attack", 0f, 2f);
         }
+    }
+
+    void Attack()
+    {
+        player.RpcTakeDamage(damage);
     }
 
 
@@ -64,14 +72,8 @@ public class EnemyStill : MonoBehaviour
     {
         Vector3 dir = target.position - transform.position;
         Quaternion lookRotation = Quaternion.LookRotation(dir);
-        Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * turnSpeed).eulerAngles;
+        Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * rotationSpeed).eulerAngles;
         partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
-    }
-
-
-    void Attack()
-    {
-        //Attack
     }
 
 

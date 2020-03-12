@@ -55,7 +55,7 @@ public class Player : NetworkBehaviour
             return;
         }
         currentHealth -= _amount;
-        Debug.Log(transform.name + "a maintenant " + currentHealth + " points de vie.");
+        Debug.Log(transform.name + " a maintenant " + currentHealth + " points de vie.");
 
         if(currentHealth <= 0)
         {
@@ -81,19 +81,19 @@ public class Player : NetworkBehaviour
 
         Debug.Log(transform.name + " est mort.");
 
-        /*StartCoroutine(Respawn());*/
+        StartCoroutine(Respawn());
     }
 
-    /*private IEnumerator Respawn()
+    private IEnumerator Respawn()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         SetDefaults();
-        transform SpawnPoint01 = NetworkManager.singleton.GetStartPosition();
-        transform.position = SpawnPoint01.position;
-        transform.rotation = SpawnPoint01.rotation;
+        Transform _spawnPoint = NetworkManager.singleton.GetStartPosition();
+        transform.position = _spawnPoint.position;
+        transform.rotation = _spawnPoint.rotation;
 
         Debug.Log(transform.name + " a respawn.");
-    }*/
+    }
 
     private void SetDefaults()
     {

@@ -1,44 +1,56 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEditor.SceneManagement;
+using UnityEditorInternal;
+using UnityEngine.Networking;
 
 public class WaveSpawner : MonoBehaviour
 {
-    [Header("Waypoint départ")]
+    public static Player player;
+
+    //Waypoint
     private Transform spawnPoint;
     private int waypointIndex = 0;
 
-    [Header("Prefab")]
-    public Transform enemyPrefab;
+    //Time
+    private float countdown = 5f;
+    public float timeBetweenWaves = 10f;
+    public float timeBetweenSpawnEnemy = 2f;
 
-    [Header("Time")]
-    private float countdown = 2f;
-    public float timeBetweenWaves = 5f;
-    public float timeBetweenSpawnEnemy = 0.5f;
-
-    [Header("Wave")]
+    //Wave
     private int waveIndex = 0;
     public int waveIndexMax = 20;
-
+    
+    //Enemy
+    public Enemy enemy;
 
     void Start()
     {
         spawnPoint = Waypoints.points[0];
     }
-
-
+    
     void Update()
     {
-        if (countdown <= 0f)
+        if (player == null)
         {
-            if (waveIndex < waveIndexMax)
-            {
-                StartCoroutine(SpawnWave());
-            }
-            countdown = timeBetweenWaves;
+            EnemyList.RemoveAll();
         }
         else
         {
-            countdown -= Time.deltaTime;
+            if (countdown <= 0f)
+            {
+                if (waveIndex < waveIndexMax)
+                {
+                    Debug.Log("Waves");
+                    StartCoroutine(SpawnWave());
+                }
+                countdown = timeBetweenWaves;
+            }
+            else
+            {
+                countdown -= Time.deltaTime;
+            }
         }
     }
 
@@ -73,6 +85,6 @@ public class WaveSpawner : MonoBehaviour
 
     void SpawnEnemy()
     {
-        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        enemy.Spawn(spawnPoint.position,spawnPoint.rotation);
     }
 }
