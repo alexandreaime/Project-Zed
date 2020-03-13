@@ -1,9 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.SceneManagement;
-using UnityEditorInternal;
-using UnityEngine.Networking;
 
 public class WaveSpawner : MonoBehaviour
 {
