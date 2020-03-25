@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class ArmeShop : MonoBehaviour
 {
-    public static Player player;
+    public Player player;
     public Transform arme1Prefab, arme2Prefab;
     
     private int costArme1 = 10;
     private int costArme2 = 20;
+
+    public void SetPlayer(Player player)
+    {
+        this.player = player;
+    }
 
     public void SelectAchat1()
     {

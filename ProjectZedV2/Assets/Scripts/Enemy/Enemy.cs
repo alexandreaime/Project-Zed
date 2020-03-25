@@ -9,21 +9,42 @@ public class Enemy : MonoBehaviour
 {
     //Player
     private Transform target;
-    public static Player player;
+    public Player player;
 
     //Attack
-    public float speed;
+    public float speed = 0.005f;
     public int damage = 1;
     //public int health = 50;
 
     private int id;
+    
+    void Start()
+    {
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        GameObject nearestPlayer = null;
+        
+        float shortestDistance = Mathf.Infinity;
+        
+        foreach (GameObject player in players)
+        {
+            float distanceToEnemy = Vector3.Distance(transform.position, player.transform.position);
+
+            if (distanceToEnemy < shortestDistance)
+            {
+                shortestDistance = distanceToEnemy;
+                nearestPlayer = player;
+            }
+            
+            target = nearestPlayer.transform;
+            this.player = target.GetComponent<Player>();
+        }
+    }
 
 
     void Update()
     {
         if (player != null)
         {
-            target = player.transform;
             if (Vector3.Distance(transform.position, target.position) > 2.5f)
             {
                 Vector3 dir = target.position - transform.position;
@@ -31,7 +52,7 @@ public class Enemy : MonoBehaviour
             }
             else
             {
-                InvokeRepeating("Attack", 0f, 1f);
+                InvokeRepeating("Attack", 0f, 2f);
             }
         }
     }
@@ -47,11 +68,5 @@ public class Enemy : MonoBehaviour
     {
         Destroy(gameObject);
         EnemyList.Remove(GetComponent<Enemy>());
-    }
-
-    public void Spawn(Vector3 position, Quaternion rotation)
-    {
-        Instantiate(transform, position, rotation);
-        EnemyList.Add(GetComponent<Enemy>());
     }
 }

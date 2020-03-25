@@ -3,8 +3,6 @@ using System.Collections;
 
 public class WaveSpawner : MonoBehaviour
 {
-    public static Player player;
-
     //Waypoint
     private Transform spawnPoint;
     private int waypointIndex = 0;
@@ -19,7 +17,7 @@ public class WaveSpawner : MonoBehaviour
     public int waveIndexMax = 20;
     
     //Enemy
-    public Enemy enemy;
+    public Transform enemyPrefab;
 
     void Start()
     {
@@ -28,7 +26,7 @@ public class WaveSpawner : MonoBehaviour
     
     void Update()
     {
-        if (player == null)
+        if (GameObject.FindGameObjectsWithTag("Player").Length == 0)
         {
             EnemyList.RemoveAll();
         }
@@ -81,6 +79,7 @@ public class WaveSpawner : MonoBehaviour
 
     void SpawnEnemy()
     {
-        enemy.Spawn(spawnPoint.position,spawnPoint.rotation);
+        Instantiate(enemyPrefab,spawnPoint.position,spawnPoint.rotation);
+        EnemyList.Add(enemyPrefab.GetComponent<Enemy>());
     }
 }

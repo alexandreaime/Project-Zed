@@ -14,7 +14,7 @@ public class EnemyStill : MonoBehaviour
 
     //Attack
     public float range = 10f;
-    public int damage = 1;
+    public int damage = 5;
 
  
     void Start()
@@ -58,7 +58,7 @@ public class EnemyStill : MonoBehaviour
         if (target != null)
         {
             LockOnTarget();
-            InvokeRepeating("Attack", 0f, 2f);
+            InvokeRepeating("Attack", 10000f, 1f);
         }
     }
 

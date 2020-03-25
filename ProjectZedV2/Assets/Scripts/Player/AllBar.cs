@@ -6,13 +6,14 @@ using UnityEngine.UI;
 
 public class AllBar : MonoBehaviour
 {
-    public static Player player;
+    public Player player;
 
     public Slider sliderHealth, sliderMoney;
     public Text moneyText, healthText;
 
-    private void Start()
+    public void SetMax(Player player)
     {
+        this.player = player;
         sliderHealth.maxValue = player.maxHealth;
         sliderMoney.maxValue = player.maxMoney;
     }

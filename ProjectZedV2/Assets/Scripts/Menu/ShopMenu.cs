@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class ShopMenu : MonoBehaviour
 {
     public bool shopEnter = true;
-    public GameObject shopMenuUI, shopButtonUI;
+    public GameObject shopButtonUI;
 
     void Update()
     {
@@ -20,17 +20,17 @@ public class ShopMenu : MonoBehaviour
 
     public void ShopEnter()
     {
-        shopMenuUI.SetActive(shopEnter);
+        gameObject.SetActive(shopEnter);
         shopButtonUI.SetActive(!shopEnter);
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
         shopEnter = !shopEnter;
     }
 
     public void ShopQuit()
     {
-        shopMenuUI.SetActive(shopEnter);
+        gameObject.SetActive(shopEnter);
         shopButtonUI.SetActive(!shopEnter);
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         shopEnter = !shopEnter;
     }
 }

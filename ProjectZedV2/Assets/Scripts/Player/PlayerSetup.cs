@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.Networking;
+using Debug = UnityEngine.Debug;
 
 [RequireComponent(typeof(Player))]
 public class PlayerSetup : NetworkBehaviour
@@ -33,12 +34,15 @@ public class PlayerSetup : NetworkBehaviour
                 sceneCamera.gameObject.SetActive(false);
             }
         }
-
+        Player _player = GetComponent<Player>();
         GetComponent<Player>().Setup();
 
         // Création du UI 
         playerUIInstance = Instantiate(playerUIPrefab);
         playerUIInstance.name = playerUIPrefab.name; // remplace le "(clone)" dans l'instance du jeu
+        
+        playerUIInstance.GetComponentInChildren<AllBar>().SetMax(_player);
+        playerUIInstance.GetComponentInChildren<ArmeShop>().SetPlayer(_player);
     }
 
     public override void OnStartClient()
@@ -47,11 +51,6 @@ public class PlayerSetup : NetworkBehaviour
         string _netID = GetComponent<NetworkIdentity>().netId.ToString();
         Player _player = GetComponent<Player>();
         GameManager.RegisterPlayer(_netID, _player);
-        
-        Enemy.player = _player;
-        WaveSpawner.player = _player;
-        AllBar.player = _player;
-        ArmeShop.player = _player;
     }
 
     private void AssignRemoteLayer()
