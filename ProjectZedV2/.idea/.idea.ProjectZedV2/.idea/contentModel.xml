@@ -33,6 +33,7 @@
           <e p="Multi" t="Include">
             <e p="HostGame.cs" t="Include" />
             <e p="JoinGame.cs" t="Include" />
+            <e p="RoomListItem.cs" t="Include" />
           </e>
           <e p="Pas utilisé" t="Include">
             <e p="CamControl.cs" t="Include" />

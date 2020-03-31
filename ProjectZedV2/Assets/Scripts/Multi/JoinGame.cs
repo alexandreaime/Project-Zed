@@ -27,6 +27,7 @@ public class JoinGame : MonoBehaviour
 
     public void RefreshRoomList()
     {
+        ClearRoomList();
         networkManager.matchMaker.ListMatches(0, 20, "", false, 0, 0, OnMatchList);
         status.text = "Refreshing...";
     }
@@ -40,12 +41,22 @@ public class JoinGame : MonoBehaviour
             return;
         }
 
-        ClearRoomList();
-
         foreach (MatchInfoSnapshot match in matchList)
         {
             GameObject _roomListItemGO = Instantiate(roomListItemPrefab);
             _roomListItemGO.transform.SetParent(roomListParent);
+            RoomListItem _roomListItem = _roomListItemGO.GetComponent<RoomListItem>();
+            if (_roomListItem != null)
+            {
+                _roomListItem.Setup(match);
+            }
+            
+            roomList.Add(_roomListItemGO);
+        }
+
+        if (roomList.Count == 0)
+        {
+            status.text = "No rooms available.";
         }
     }
 
