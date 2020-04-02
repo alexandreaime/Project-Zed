@@ -40,6 +40,11 @@ public class Player : NetworkBehaviour
 
     private void Update()
     {
+        if (PauseMenu.GameIsPaused == true)
+        {
+            return;
+        }
+        
         if (!isLocalPlayer)
         {
             return;

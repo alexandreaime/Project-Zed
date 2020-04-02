@@ -19,4 +19,12 @@ public class PlayerStats : MonoBehaviour
         health = startHealth;
         TotalArme = new List<(int,Transform)>();
     }
+
+    public void Update()
+    {
+        if (PauseMenu.GameIsPaused == true)
+        {
+            return;
+        }
+    }
 }

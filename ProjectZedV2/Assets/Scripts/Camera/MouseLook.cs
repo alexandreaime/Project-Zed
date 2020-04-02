@@ -19,6 +19,11 @@ public class MouseLook : MonoBehaviour
 
     void Update()
     {
+        if (PauseMenu.GameIsPaused == true)
+        {
+            return;
+        }
+        
         // On va calculer la rotation du joueur ainsi que la rotation de la camera en un Vecteur 3D
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;

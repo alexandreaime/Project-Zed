@@ -34,6 +34,9 @@ ScriptsOnlyBuild:
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
+    UnityEditor.UI.dll:
+    - UnityEditor.UI.ButtonEditor
+    - UnityEditor.UI.ImageEditor
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -52,6 +55,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
     com.unity.multiplayer-hlapi.Runtime.dll:
+    - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
     - UnityEngine.Networking.NetworkManager
     - UnityEngine.Networking.NetworkManagerHUD
@@ -92,6 +96,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 9708}
+    - Class: 114
+      Script: {instanceID: 9838}
     - Class: 114
       Script: {instanceID: 9874}
     - Class: 114
@@ -140,6 +146,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10970}
     - Class: 114
       Script: {instanceID: 11016}
+    - Class: 114
+      Script: {instanceID: 11074}
     - Class: 114
       Script: {instanceID: 11080}
     - Class: 114

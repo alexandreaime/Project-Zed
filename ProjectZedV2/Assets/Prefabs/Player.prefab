@@ -675,8 +675,6 @@ MonoBehaviour:
   - {fileID: 582587156078864030}
   - {fileID: 7430714165356424349}
   - {fileID: 9108135819320449236}
-  - {fileID: 6696848618362026483, guid: ce83ff1bc1531654cbe10915a5bcf6dc, type: 3}
-  - {fileID: 3383979288177452548, guid: c720957981ece3541b2929617f853ffe, type: 3}
   remoteLayerName: RemotePlayer
   playerUIPrefab: {fileID: 6232798348428556559, guid: 8bd8c30db8fc43145923657ed32936aa,
     type: 3}

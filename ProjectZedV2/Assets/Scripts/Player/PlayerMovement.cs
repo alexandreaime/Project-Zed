@@ -21,6 +21,11 @@ public class PlayerMovement : MonoBehaviour
    
     void Update()
     {
+        if (PauseMenu.GameIsPaused == true)
+        {
+            return;
+        }
+        
         // On vérifie si le joueur est au sol ou pas
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
         
