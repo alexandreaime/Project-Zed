@@ -24,17 +24,22 @@ public class PlayerShoot : NetworkBehaviour
         {
             return;
         }
-        
+
         if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
-            Debug.Log("Tir effectué");
-        } 
+            InvokeRepeating("Shoot", 0f, 0.4f); //Arme automatique
+        }
+        else if (Input.GetButtonUp("Fire1"))
+        {
+            CancelInvoke("Shoot");
+        }
     }
 
     [Client] 
     private void Shoot()
     {
+        Debug.Log("Tir effectué pleins de fois fréro");
         //permet de récupérer des infos sur l'objet touché (type, distance ...)
         RaycastHit _hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, weapon.range, mask)) 
