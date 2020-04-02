@@ -52,7 +52,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
     com.unity.multiplayer-hlapi.Runtime.dll:
-    - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
     - UnityEngine.Networking.NetworkManager
     - UnityEngine.Networking.NetworkManagerHUD
@@ -124,43 +123,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10376}
     - Class: 114
-      Script: {instanceID: 10596}
+      Script: {instanceID: 10474}
     - Class: 114
-      Script: {instanceID: 10682}
+      Script: {instanceID: 10598}
     - Class: 114
-      Script: {instanceID: 10804}
+      Script: {instanceID: 10684}
     - Class: 114
-      Script: {instanceID: 10862}
+      Script: {instanceID: 10806}
     - Class: 114
-      Script: {instanceID: 10902}
+      Script: {instanceID: 10864}
     - Class: 114
-      Script: {instanceID: 10954}
+      Script: {instanceID: 10904}
     - Class: 114
-      Script: {instanceID: 10968}
+      Script: {instanceID: 10956}
     - Class: 114
-      Script: {instanceID: 11014}
+      Script: {instanceID: 10970}
     - Class: 114
-      Script: {instanceID: 11078}
+      Script: {instanceID: 11016}
     - Class: 114
-      Script: {instanceID: 11332}
+      Script: {instanceID: 11080}
     - Class: 114
-      Script: {instanceID: 11364}
+      Script: {instanceID: 11334}
     - Class: 114
-      Script: {instanceID: 11380}
+      Script: {instanceID: 11366}
     - Class: 114
-      Script: {instanceID: 11438}
+      Script: {instanceID: 11382}
     - Class: 114
-      Script: {instanceID: 11694}
+      Script: {instanceID: 11440}
     - Class: 114
-      Script: {instanceID: 11700}
+      Script: {instanceID: 11696}
     - Class: 114
-      Script: {instanceID: 11762}
+      Script: {instanceID: 11702}
     - Class: 114
-      Script: {instanceID: 11766}
+      Script: {instanceID: 11764}
     - Class: 114
-      Script: {instanceID: 11800}
+      Script: {instanceID: 11768}
     - Class: 114
-      Script: {instanceID: 15198}
+      Script: {instanceID: 11802}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -221,25 +220,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10406}
     - Class: 114
-      Script: {instanceID: 10804}
+      Script: {instanceID: 10806}
     - Class: 114
-      Script: {instanceID: 11048}
+      Script: {instanceID: 11050}
     - Class: 114
-      Script: {instanceID: 11066}
+      Script: {instanceID: 11068}
     - Class: 114
-      Script: {instanceID: 11264}
+      Script: {instanceID: 11266}
     - Class: 114
-      Script: {instanceID: 11332}
+      Script: {instanceID: 11334}
     - Class: 114
-      Script: {instanceID: 11522}
+      Script: {instanceID: 11524}
     - Class: 114
-      Script: {instanceID: 11648}
+      Script: {instanceID: 11650}
     - Class: 114
-      Script: {instanceID: 11704}
+      Script: {instanceID: 11706}
     - Class: 114
-      Script: {instanceID: 11766}
+      Script: {instanceID: 11768}
     - Class: 114
-      Script: {instanceID: 11800}
+      Script: {instanceID: 11802}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -320,45 +319,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10376}
     - Class: 114
-      Script: {instanceID: 10558}
+      Script: {instanceID: 10560}
     - Class: 114
-      Script: {instanceID: 10592}
+      Script: {instanceID: 10594}
     - Class: 114
-      Script: {instanceID: 10596}
+      Script: {instanceID: 10598}
     - Class: 114
-      Script: {instanceID: 10682}
+      Script: {instanceID: 10684}
     - Class: 114
-      Script: {instanceID: 10804}
+      Script: {instanceID: 10806}
     - Class: 114
-      Script: {instanceID: 10862}
+      Script: {instanceID: 10864}
     - Class: 114
-      Script: {instanceID: 10916}
+      Script: {instanceID: 10918}
     - Class: 114
-      Script: {instanceID: 10968}
+      Script: {instanceID: 10970}
     - Class: 114
-      Script: {instanceID: 11072}
+      Script: {instanceID: 11074}
     - Class: 114
-      Script: {instanceID: 11078}
+      Script: {instanceID: 11080}
     - Class: 114
-      Script: {instanceID: 11268}
+      Script: {instanceID: 11270}
     - Class: 114
-      Script: {instanceID: 11332}
+      Script: {instanceID: 11334}
     - Class: 114
-      Script: {instanceID: 11364}
+      Script: {instanceID: 11366}
     - Class: 114
-      Script: {instanceID: 11380}
+      Script: {instanceID: 11382}
     - Class: 114
-      Script: {instanceID: 11438}
+      Script: {instanceID: 11440}
     - Class: 114
-      Script: {instanceID: 11694}
+      Script: {instanceID: 11696}
     - Class: 114
-      Script: {instanceID: 11700}
+      Script: {instanceID: 11702}
     - Class: 114
-      Script: {instanceID: 11762}
+      Script: {instanceID: 11764}
     - Class: 114
-      Script: {instanceID: 11766}
+      Script: {instanceID: 11768}
     - Class: 114
-      Script: {instanceID: 11800}
+      Script: {instanceID: 11802}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -696,6 +695,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: Benchmark01
+  - hash:
+      serializedVersion: 2
+      Hash: 256aecdbc7ad9d57dea7c5991fd40b84
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RoomListItem
   - hash:
       serializedVersion: 2
       Hash: 265cf27ba050d55ff33a8acab4ded6c0
@@ -1236,12 +1241,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMotor
-  - hash:
-      serializedVersion: 2
-      Hash: 256aecdbc7ad9d57dea7c5991fd40b84
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RoomListItem
   platform: 19
   scenePathNames:
   - Assets/Scenes/Main Menu.unity

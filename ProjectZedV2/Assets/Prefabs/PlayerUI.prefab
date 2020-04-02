@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17efe719a8d00494e8ef04c336087079, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   sliderHealth: {fileID: 6232798347459370279}
   sliderMoney: {fileID: 6232798347942319831}
   moneyText: {fileID: 6232798348612391726}
@@ -460,7 +461,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MENU
+  m_Text: LOBBY
 --- !u!114 &6232798347499623273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -597,7 +598,7 @@ RectTransform:
   - {fileID: 6232798348978083624}
   - {fileID: 6232798348653544156}
   m_Father: {fileID: 6232798348428556554}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1548,8 +1549,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 6232798347525779879}
   - {fileID: 6232798348821918429}
+  - {fileID: 6232798347525779879}
   - {fileID: 6232798347781535127}
   - {fileID: 6232798349011192823}
   - {fileID: 975515906804198196}
@@ -2180,7 +2181,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6232798348428556554}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2584,8 +2585,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4, y: -12.1}
-  m_SizeDelta: {x: 196.1, y: 80.3}
+  m_AnchoredPosition: {x: -8, y: -10.4}
+  m_SizeDelta: {x: 231.68, y: 88.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6232798348978083669
 CanvasRenderer:
@@ -3125,6 +3126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49d6d24fc887c5b41bed28755c717d9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   arme1Prefab: {fileID: 5196796060636140068, guid: d8611ea433318504b9646f5197594c24,
     type: 3}
   arme2Prefab: {fileID: 6685079913409990269, guid: ab19fd83168555e459217047d2d350a7,
