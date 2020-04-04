@@ -23,7 +23,18 @@ public class PlayerMovement : MonoBehaviour
     {
         if (PauseMenu.GameIsPaused == true)
         {
+            if (Cursor.lockState != CursorLockMode.None)
+            {
+                Cursor.lockState = CursorLockMode.None;
+            }
+
+            controller.Move(Vector3.zero); 
             return;
+        }
+
+        if (Cursor.lockState != CursorLockMode.Locked)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
         }
         
         // On vérifie si le joueur est au sol ou pas
