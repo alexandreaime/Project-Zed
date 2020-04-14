@@ -28,7 +28,7 @@ public class PlayerShoot : NetworkBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
-            InvokeRepeating("Shoot", 0f, 0.4f); //Arme automatique
+            InvokeRepeating("Shoot", 0f, 0.2f); //Arme automatique
         }
         else if (Input.GetButtonUp("Fire1"))
         {
@@ -39,7 +39,7 @@ public class PlayerShoot : NetworkBehaviour
     [Client] 
     private void Shoot()
     {
-        Debug.Log("Tir effectué pleins de fois fréro");
+        Debug.Log("Tir effectué");
         //permet de récupérer des infos sur l'objet touché (type, distance ...)
         RaycastHit _hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, weapon.range, mask)) 
