@@ -123,7 +123,7 @@ nav a:hover
 
 #banniere_image
 {
-    background-image: url('images/map.png');
+    background-image: url('images/mapv2.png');
     background-attachment:relative;
     background-repeat:    no-repeat;
     background-position:  center;
@@ -175,6 +175,10 @@ article
 article p
 {
     font-size: 0.8em;
+}
+
+.flotte {
+float:left;
 }
 
 aside
