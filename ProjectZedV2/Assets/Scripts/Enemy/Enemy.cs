@@ -67,6 +67,5 @@ public class Enemy : MonoBehaviour
     public void DestroyTransform()
     {
         Destroy(gameObject);
-        EnemyList.Remove(GetComponent<Enemy>());
     }
 }

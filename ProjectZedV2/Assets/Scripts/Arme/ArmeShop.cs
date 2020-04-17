@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ArmeShop : MonoBehaviour
 {
-    public Player player;
+    private Player player;
     public Transform arme1Prefab, arme2Prefab;
     
     private int costArme1 = 10;
@@ -58,9 +58,8 @@ public class ArmeShop : MonoBehaviour
         {
             player.TotalArme.Add(arme);
             Instantiate(arme, player.transform.GetChild(1).transform.GetChild(0));
-            return true;
         }
 
-        return false;
+        return i == player.TotalArme.Count;
     }
 }

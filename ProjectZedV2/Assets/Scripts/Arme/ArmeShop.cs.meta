@@ -3,7 +3,12 @@ guid: 49d6d24fc887c5b41bed28755c717d9a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - player: {instanceID: 0}
+  - arme1Prefab: {fileID: 5196796060636140068, guid: d8611ea433318504b9646f5197594c24,
+      type: 3}
+  - arme2Prefab: {fileID: 6685079913409990269, guid: ab19fd83168555e459217047d2d350a7,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

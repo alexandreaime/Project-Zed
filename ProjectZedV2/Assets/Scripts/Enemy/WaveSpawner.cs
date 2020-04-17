@@ -26,11 +26,7 @@ public class WaveSpawner : MonoBehaviour
     
     void Update()
     {
-        if (GameObject.FindGameObjectsWithTag("Player").Length == 0)
-        {
-            EnemyList.RemoveAll();
-        }
-        else
+        if (GameObject.FindGameObjectsWithTag("Player").Length > 0)
         {
             if (countdown <= 0f)
             {
@@ -80,6 +76,5 @@ public class WaveSpawner : MonoBehaviour
     void SpawnEnemy()
     {
         Instantiate(enemyPrefab,spawnPoint.position,spawnPoint.rotation);
-        EnemyList.Add(enemyPrefab.GetComponent<Enemy>());
     }
 }
