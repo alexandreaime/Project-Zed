@@ -42,7 +42,7 @@ public class PlayerSetup : NetworkBehaviour
         playerUIInstance.name = playerUIPrefab.name; // remplace le "(clone)" dans l'instance du jeu
         
         playerUIInstance.GetComponentInChildren<AllBar>().SetMax(_player);
-        playerUIInstance.transform.GetChild(3).GetChild(2).GetComponent<ArmeShop>().SetPlayer(_player);
+        playerUIInstance.GetComponentInChildren<ArmeShop>().SetPlayer(_player);
     }
 
     public override void OnStartClient()

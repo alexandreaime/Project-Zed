@@ -1,15 +1,22 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using TMPro;
+using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
     //Player
     private Transform target;
-    private Player player;
+    public Player player;
 
     //Attack
     public float speed = 0.005f;
     public int damage = 1;
     //public int health = 50;
+
+    private int id;
     
     void Start()
     {
@@ -44,7 +51,9 @@ public class Enemy : MonoBehaviour
                 transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
             }
             else
+            {
                 InvokeRepeating("Attack", 0f, 2f);
+            }
         }
     }
 
@@ -58,5 +67,6 @@ public class Enemy : MonoBehaviour
     public void DestroyTransform()
     {
         Destroy(gameObject);
+        EnemyList.Remove(GetComponent<Enemy>());
     }
 }

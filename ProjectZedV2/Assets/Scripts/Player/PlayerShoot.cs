@@ -20,8 +20,10 @@ public class PlayerShoot : NetworkBehaviour
 
     private void Update()
     {
-        if (PauseMenu.GameIsPaused)
+        if (PauseMenu.GameIsPaused == true)
+        {
             return;
+        }
 
         if (Input.GetButtonDown("Fire1"))
         {
@@ -54,7 +56,6 @@ public class PlayerShoot : NetworkBehaviour
                     if (enemy != null)
                     {
                         enemy.DestroyTransform();
-                        Debug.Log("Ennemi tué");
                     }
                 }
             }

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class AllBar : MonoBehaviour
 {
-    private Player player;
+    public Player player;
 
     public Slider sliderHealth, sliderMoney;
     public Text moneyText, healthText;
@@ -20,11 +20,9 @@ public class AllBar : MonoBehaviour
 
     public void Update()
     {
-        //Health
         sliderHealth.value = player.currentHealth;
         healthText.text = " HEALTH : " + player.currentHealth;
         
-        //Money
         sliderMoney.value = player.currentMoney;
         moneyText.text = " MONEYS : " + player.currentMoney;
     }
