@@ -5,7 +5,7 @@ public class WaveSpawner : MonoBehaviour
 {
     //Waypoint
     private Transform spawnPoint;
-    private int waypointIndex = 0;
+    private int waypointIndex;
 
     //Time
     private float countdown = 5f;
@@ -13,7 +13,7 @@ public class WaveSpawner : MonoBehaviour
     public float timeBetweenSpawnEnemy = 2f;
 
     //Wave
-    private int waveIndex = 0;
+    private int waveIndex;
     public int waveIndexMax = 20;
     
     //Enemy
@@ -26,11 +26,7 @@ public class WaveSpawner : MonoBehaviour
     
     void Update()
     {
-        if (GameObject.FindGameObjectsWithTag("Player").Length == 0)
-        {
-            EnemyList.RemoveAll();
-        }
-        else
+        if (GameObject.FindGameObjectsWithTag("Player").Length > 0)
         {
             if (countdown <= 0f)
             {
@@ -42,9 +38,7 @@ public class WaveSpawner : MonoBehaviour
                 countdown = timeBetweenWaves;
             }
             else
-            {
                 countdown -= Time.deltaTime;
-            }
         }
     }
 
@@ -71,15 +65,12 @@ public class WaveSpawner : MonoBehaviour
             spawnPoint = Waypoints.points[waypointIndex];
         }
         else
-        {
             waypointIndex = 1;
-        }
     }
 
 
     void SpawnEnemy()
     {
         Instantiate(enemyPrefab,spawnPoint.position,spawnPoint.rotation);
-        EnemyList.Add(enemyPrefab.GetComponent<Enemy>());
     }
 }

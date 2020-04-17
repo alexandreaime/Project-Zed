@@ -19,9 +19,7 @@ public class Player : NetworkBehaviour
     public int maxMoney = 500;
     
     [SyncVar]
-    public int currentHealth;
-    public int currentMoney;
-    
+    public int currentHealth, currentMoney;
     public List<Transform> TotalArme;
 
     [SerializeField]
@@ -31,45 +29,36 @@ public class Player : NetworkBehaviour
     public void Setup()
     {
         wasEnabled = new bool[disableOnDeath.Length];
+        
         for (int i = 0; i < disableOnDeath.Length; i++)
-        {
             wasEnabled[i] = disableOnDeath[i].enabled;
-        }
+        
         SetDefaults();
     }
 
     private void Update()
     {
         if (PauseMenu.GameIsPaused == true)
-        {
             return;
-        }
         
         if (!isLocalPlayer)
-        {
             return;
-        }
 
         if (Input.GetKeyDown(KeyCode.K))
-        {
             RpcTakeDamage(100000);
-        }
     }
 
     [ClientRpc]
     public void RpcTakeDamage(int _amount)
     {
         if (isDead)
-        {
             return;
-        }
+        
         currentHealth -= _amount;
         Debug.Log(transform.name + " a maintenant " + currentHealth + " points de vie.");
 
         if(currentHealth <= 0)
-        {
             Die();
-        }
     }
 
     private void Die()
@@ -77,15 +66,12 @@ public class Player : NetworkBehaviour
         isDead = true;
 
         for (int i = 0; i < disableOnDeath.Length; i++)
-        {
             disableOnDeath[i].enabled = false;
-        }
 
         Collider _col = GetComponent<Collider>();
+        
         if (_col != null)
-        {
             _col.enabled = false;
-        }
 
 
         Debug.Log(transform.name + " est mort.");
@@ -107,18 +93,14 @@ public class Player : NetworkBehaviour
     private void SetDefaults()
     {
         isDead = false;
-        currentHealth = maxHealth;
-        currentMoney = maxMoney;
+        (currentHealth, currentMoney) = (maxHealth, maxMoney);
 
         for (int i = 0; i < disableOnDeath.Length; i++)
-        {
             disableOnDeath[i].enabled = wasEnabled[i];
-        }
 
         Collider _col = GetComponent<Collider>();
+        
         if (_col != null)
-        {
             _col.enabled = true;
-        }
     }
 }
