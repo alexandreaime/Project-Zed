@@ -17,6 +17,7 @@ public class Player : NetworkBehaviour
     [SerializeField]
     public int maxHealth = 100;
     public int maxMoney = 500;
+    public int score;
     
     [SyncVar]
     public int currentHealth;
@@ -109,6 +110,7 @@ public class Player : NetworkBehaviour
         isDead = false;
         currentHealth = maxHealth;
         currentMoney = maxMoney;
+        score = 0;
 
         for (int i = 0; i < disableOnDeath.Length; i++)
         {

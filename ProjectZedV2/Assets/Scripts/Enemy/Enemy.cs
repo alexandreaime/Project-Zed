@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
 {
     //Player
     private Transform target;
-    public Player player;
+    private Player player;
 
     //Attack
     public float speed = 0.005f;

@@ -42,21 +42,24 @@ public class PlayerShoot : NetworkBehaviour
         Debug.Log("Tir effectué");
         //permet de récupérer des infos sur l'objet touché (type, distance ...)
         RaycastHit _hit;
-        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, weapon.range, mask)) 
+        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, weapon.range, mask))
         {
+            Player player = GetComponent<Player>();
+            
             if (_hit.collider.tag == "Player")
             {
                 CmdPlayerShot(_hit.collider.name, weapon.damage);
+                player.score += 10;
+                Debug.Log("score : "+player.score);
             }
-            else
+            else if (_hit.collider.tag == "Enemy")
             {
-                if (_hit.collider.tag == "Enemy")
+                Enemy enemy = _hit.transform.GetComponent<Enemy>();
+                if (enemy != null)
                 {
-                    Enemy enemy = _hit.transform.GetComponent<Enemy>();
-                    if (enemy != null)
-                    {
-                        enemy.DestroyTransform();
-                    }
+                    enemy.DestroyTransform();
+                    player.score++;
+                    Debug.Log("score : "+player.score);
                 }
             }
         }

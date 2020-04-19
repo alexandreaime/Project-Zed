@@ -22,6 +22,9 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            transform.GetChild(0).gameObject.SetActive(GameIsPaused);
+            transform.GetChild(3).gameObject.SetActive(GameIsPaused);
+            
             if (GameIsPaused)
             {
                 Resume();

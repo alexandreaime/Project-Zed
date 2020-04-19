@@ -58,8 +58,9 @@ public class ArmeShop : MonoBehaviour
         {
             player.TotalArme.Add(arme);
             Instantiate(arme, player.transform.GetChild(1).transform.GetChild(0));
+            return true;
         }
 
-        return i == player.TotalArme.Count;
+        return false;
     }
 }

@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class SwitchArme : MonoBehaviour
 {
-    private Transform weapon;
-
     private int selectWeapon;
 
     public void Update()

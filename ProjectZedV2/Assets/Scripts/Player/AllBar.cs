@@ -6,10 +6,10 @@ using UnityEngine.UI;
 
 public class AllBar : MonoBehaviour
 {
-    public Player player;
+    private Player player;
 
     public Slider sliderHealth, sliderMoney;
-    public Text moneyText, healthText;
+    public Text moneyText, healthText, scoreText;
 
     public void SetMax(Player player)
     {
@@ -25,5 +25,7 @@ public class AllBar : MonoBehaviour
         
         sliderMoney.value = player.currentMoney;
         moneyText.text = " MONEYS : " + player.currentMoney;
+
+        scoreText.text = "SCORE : " + player.score;
     }
 }
