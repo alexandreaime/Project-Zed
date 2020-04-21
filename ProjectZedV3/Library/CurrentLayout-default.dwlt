@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 681, y: 494}
   m_MaxSize: {x: 14002, y: 14044}
   vertical: 0
-  controlID: 104
+  controlID: 130
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 31
+  controlID: 81
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -382,10 +382,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 1559}
-      m_SelectedIDs: 8a440000
-      m_LastClickedID: 17546
-      m_ExpandedIDs: 6efbffff70fbffffdc41000070420000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 2871ffff5271ffffdae8ffff70fbffff7042000052440000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -445,9 +445,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -107.35149, y: 67.23651, z: -94.492195}
+    m_Target: {x: 10.0946665, y: 0.94993085, z: 36.161503}
     speed: 2
-    m_Value: {x: -107.35149, y: 67.23651, z: -94.492195}
+    m_Value: {x: 10.0946665, y: 0.94993085, z: 36.161503}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -476,13 +476,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.21759868, y: 0.3807498, z: -0.092614606, w: 0.89394253}
+    m_Target: {x: -0.00113039, y: -0.9987527, z: 0.024218537, w: -0.044036955}
     speed: 2
-    m_Value: {x: 0.21759538, y: 0.38074404, z: -0.092613205, w: 0.893929}
+    m_Value: {x: -0.0011303709, y: -0.9987358, z: 0.024218127, w: -0.04403621}
   m_Size:
-    m_Target: 5.5676575
+    m_Target: 16.928246
     speed: 2
-    m_Value: 5.5676575
+    m_Value: 16.928246
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -501,7 +501,7 @@ MonoBehaviour:
     m_DynamicClip: 1
     m_OcclusionCulling: 0
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: -0.037644885, y: 0.7368585, z: -0.041163005, w: -0.67376316}
+  m_LastSceneViewRotation: {x: -0.00113039, y: -0.9987527, z: 0.024218537, w: -0.044036955}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -573,19 +573,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs
   m_LastFoldersGridSize: 57
   m_LastProjectPath: C:\Users\user\Desktop\NEW ZED\projectzed2\ProjectZedV3
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b8300000
-    m_LastClickedID: 12472
+    m_SelectedIDs: 42390000
+    m_LastClickedID: 14658
     m_ExpandedIDs: 00000000b8300000c63100001c330000e0340000c236000034390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -642,7 +642,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300001c2d00009241000000000000a43a0000
+    m_ExpandedInstanceIDs: c62300001c2d00009241000000000000a43a0000a6310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
