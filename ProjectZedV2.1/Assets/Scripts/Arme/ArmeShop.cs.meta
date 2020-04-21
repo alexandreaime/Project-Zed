@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 49d6d24fc887c5b41bed28755c717d9a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - arme1Prefab: {fileID: 7639133616373208702, guid: d8611ea433318504b9646f5197594c24,
+      type: 3}
+  - arme2Prefab: {fileID: 8439817955514367757, guid: ab19fd83168555e459217047d2d350a7,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
