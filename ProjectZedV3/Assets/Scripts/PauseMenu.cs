@@ -16,7 +16,7 @@ public class PauseMenu : MonoBehaviour {
 
     public void LeaveRoomButton()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("Lobby");
         MatchInfo matchInfo = networkManager.matchInfo;
         networkManager.matchMaker.DropConnection(matchInfo.networkId, matchInfo.nodeId, 0, networkManager.OnDropConnection);
         networkManager.StopHost();

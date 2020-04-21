@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -464,10 +464,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 1479}
-      m_SelectedIDs: 8c440000
-      m_LastClickedID: 17548
-      m_ExpandedIDs: 72fbffff72420000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: cedaffffd0daffffcc5a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -527,9 +527,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -46.62363, y: 23.64618, z: -8.83737}
+    m_Target: {x: 0.8603935, y: -4.173561, z: 27.964031}
     speed: 2
-    m_Value: {x: -46.62363, y: 23.64618, z: -8.83737}
+    m_Value: {x: 0.8603935, y: -4.173561, z: 27.964031}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -558,20 +558,20 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.29897332, y: 0.666393, z: -0.59548646, w: -0.3346365}
+    m_Target: {x: -0.09493646, y: -0.9035639, z: 0.3219059, w: -0.26643625}
     speed: 2
-    m_Value: {x: -0.29946736, y: 0.6654822, z: -0.59647036, w: -0.3341793}
+    m_Value: {x: -0.09493398, y: -0.9035403, z: 0.3218975, w: -0.2664293}
   m_Size:
-    m_Target: 502.67496
+    m_Target: 61.114716
     speed: 2
-    m_Value: 461.16968
+    m_Value: 61.114716
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1.5
-    m_SpeedNormalized: 0.76000017
+    m_Speed: 1.7
+    m_SpeedNormalized: 0.8500001
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -655,20 +655,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: 57
-  m_LastProjectPath: C:\Users\phgad\Documents\GitHub\projectzed2\ProjectZedV3
+  m_LastProjectPath: C:\Users\user\Desktop\NEW ZED\projectzed2\ProjectZedV3
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 321}
-    m_SelectedIDs: 44390000
-    m_LastClickedID: 14660
-    m_ExpandedIDs: 00000000b83000002a310000c63100001c330000e2340000c43600001639000036390000423c00009a3c000000ca9a3b
+    scrollPos: {x: 0, y: 221}
+    m_SelectedIDs: fa4d0000
+    m_LastClickedID: 19962
+    m_ExpandedIDs: 00000000904c0000f64c00006e4d00006a4e0000b44f00002c5100002a5300003e5300000056000048560000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -696,7 +696,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b83000002a310000c63100001c330000e2340000c43600001639000036390000423c00009a3c0000
+    m_ExpandedIDs: 00000000904c0000f64c00006e4d00006a4e0000b44f00002c5100002a5300003e5300000056000048560000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -815,7 +815,7 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 430
+  m_LastVerticalScrollValue: 0
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52

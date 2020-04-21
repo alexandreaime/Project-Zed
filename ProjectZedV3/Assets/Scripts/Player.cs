@@ -113,11 +113,11 @@ public class Player : NetworkBehaviour {
 
         if(currentHealth <= 0)
         {
-            Die(_sourceID);
+            Die();
         }
     }
     
-    private void Die(string _sourceID)
+    /*private void Die(string _sourceID)
     {
         isDead = true;
 
@@ -163,17 +163,46 @@ public class Player : NetworkBehaviour {
         Debug.Log(transform.name + " est mort.");
 
         StartCoroutine(Respawn());
+    }*/
+    
+    private void Die()
+    {
+        isDead = true;
+        
+        deaths++;
+
+        for (int i = 0; i < disableOnDeath.Length; i++)
+        {
+            disableOnDeath[i].enabled = false;
+        }
+
+        Collider _col = GetComponent<Collider>();
+        if (_col != null)
+        {
+            _col.enabled = false;
+        }
+
+
+        Debug.Log(transform.name + " est mort.");
+
+        StartCoroutine(Respawn());
     }
     
     private IEnumerator Respawn()
     {
-        yield return new WaitForSeconds(GameManager.instance.matchSettings.respawnTime);
+        /*yield return new WaitForSeconds(GameManager.instance.matchSettings.respawnTime);
 
         Transform _spawnPoint = NetworkManager.singleton.GetStartPosition();
         transform.position = _spawnPoint.position;
         transform.rotation = _spawnPoint.rotation;
         yield return new WaitForSeconds(0.1f);
         SetupPlayer();
+        Debug.Log(transform.name + " a respawn.");*/
+        yield return new WaitForSeconds(0.5f);
+        SetDefaults();
+        Transform _spawnPoint = NetworkManager.singleton.GetStartPosition();
+        transform.position = _spawnPoint.position;
+        transform.rotation = _spawnPoint.rotation;
 
         Debug.Log(transform.name + " a respawn.");
     }
