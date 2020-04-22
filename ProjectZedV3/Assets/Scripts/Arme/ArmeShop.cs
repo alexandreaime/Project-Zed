@@ -16,7 +16,11 @@ public class ArmeShop : MonoBehaviour
     {
         this.player = player;
         sliderMoney.maxValue = player.maxMoney;
-        sliderMoney.value = 0;
+    }
+
+    public void Update()
+    {
+        sliderMoney.value = player.currentMoney;
     }
 
     public void SelectAchat1()
@@ -36,7 +40,6 @@ public class ArmeShop : MonoBehaviour
             if (AddArme(arme))
             {
                 player.currentMoney -= cost;
-                SetMoney(player.currentMoney);
                 Debug.Log(name + " buy !");
             }
             else
@@ -68,9 +71,5 @@ public class ArmeShop : MonoBehaviour
 
         return false;
     }
-    
-    public void SetMoney(int value)
-    {
-        sliderMoney.value = player.currentMoney;
-    }
+ 
 }
