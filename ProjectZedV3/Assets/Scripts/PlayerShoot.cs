@@ -111,9 +111,12 @@ public class PlayerShoot : NetworkBehaviour {
         RaycastHit _hit;
         if(Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, currentWeapon.range, mask))
         {
+            int money = 0;
+            
             if(_hit.collider.tag == "Player")
             {
                 CmdPlayerShot(_hit.collider.name, currentWeapon.damage, transform.name);
+                money = 10;
             }
             else if (_hit.collider.tag == "Enemy")
             {
@@ -123,8 +126,15 @@ public class PlayerShoot : NetworkBehaviour {
                     Player sourcePlayer = GameManager.GetPlayer(transform.name);
                     enemy.DestroyTransform();
                     sourcePlayer.kills++;
+                    money = 1;
                 }
             }
+
+            Player player = GetComponent<Player>();
+            if (player.currentMoney + money > player.maxMoney)
+                player.currentMoney = player.maxMoney;
+            else
+                player.currentMoney += money;
 
             CmdOnHit(_hit.point, _hit.normal);
         }
