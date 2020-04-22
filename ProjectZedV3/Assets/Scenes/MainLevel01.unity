@@ -258,6 +258,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waypoints
       objectReference: {fileID: 0}
+    - target: {fileID: 8856319660518708846, guid: 0d4daf1872bdfb743a292719c75b17a3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d4daf1872bdfb743a292719c75b17a3, type: 3}
 --- !u!1 &581128124
@@ -358,6 +363,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyStill
       objectReference: {fileID: 0}
+    - target: {fileID: 6696848618362026252, guid: 290337a369af4a9409fda6eabd8ba597,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6696848618362026483, guid: 290337a369af4a9409fda6eabd8ba597,
         type: 3}
       propertyPath: partToRotate
@@ -366,7 +376,7 @@ PrefabInstance:
     - target: {fileID: 6696848618362026487, guid: 290337a369af4a9409fda6eabd8ba597,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 48.19
+      value: 142.5
       objectReference: {fileID: 0}
     - target: {fileID: 6696848618362026487, guid: 290337a369af4a9409fda6eabd8ba597,
         type: 3}
@@ -376,7 +386,7 @@ PrefabInstance:
     - target: {fileID: 6696848618362026487, guid: 290337a369af4a9409fda6eabd8ba597,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -41.9
+      value: -84.3
       objectReference: {fileID: 0}
     - target: {fileID: 6696848618362026487, guid: 290337a369af4a9409fda6eabd8ba597,
         type: 3}

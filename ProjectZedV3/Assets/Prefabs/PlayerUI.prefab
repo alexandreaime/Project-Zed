@@ -601,7 +601,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 86.45502, y: 148.76}
+  m_AnchoredPosition: {x: 98.4, y: 148.76}
   m_SizeDelta: {x: 49.29, y: 253.52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &222495071016642748
@@ -1873,6 +1873,11 @@ PrefabInstance:
       propertyPath: shopButtonUI
       value: 
       objectReference: {fileID: 7774827864889588270}
+    - target: {fileID: 3328473193096597792, guid: 2c89b50a8c0d815449936990e4ccdc27,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 37.6
+      objectReference: {fileID: 0}
     - target: {fileID: 5424640831047804489, guid: 2c89b50a8c0d815449936990e4ccdc27,
         type: 3}
       propertyPath: m_AnchorMax.y

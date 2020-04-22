@@ -123,7 +123,7 @@ nav a:hover
 
 #banniere_image
 {
-    background-image: url('images/mapv2.png');
+    background-image: url('images/mapv3.png');
     background-attachment:relative;
     background-repeat:    no-repeat;
     background-position:  center;
@@ -185,7 +185,7 @@ aside
 {
     flex: 1.2;
     position: relative;
-    background-color: #ee1010;
+    background-color: #610B0B;
     box-shadow: 0px 2px 5px #1c1a19;
     border-radius: 5px;
     padding: 10px;
