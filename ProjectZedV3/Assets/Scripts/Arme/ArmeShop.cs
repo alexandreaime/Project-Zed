@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ArmeShop : MonoBehaviour
 {
     private Player player;
     public Transform arme1Prefab, arme2Prefab;
+    public Slider sliderMoney;
     
     private int costArme1 = 10;
     private int costArme2 = 20;
@@ -13,6 +15,8 @@ public class ArmeShop : MonoBehaviour
     public void SetPlayer(Player player)
     {
         this.player = player;
+        sliderMoney.maxValue = player.maxMoney;
+        sliderMoney.value = 0;
     }
 
     public void SelectAchat1()
@@ -32,6 +36,7 @@ public class ArmeShop : MonoBehaviour
             if (AddArme(arme))
             {
                 player.currentMoney -= cost;
+                SetMoney(player.currentMoney);
                 Debug.Log(name + " buy !");
             }
             else
@@ -57,10 +62,15 @@ public class ArmeShop : MonoBehaviour
         if (i == player.TotalArme.Count)
         {
             player.TotalArme.Add(arme);
-            Instantiate(arme, player.transform.GetChild(1).transform.GetChild(0));
+            //Instantiate(arme, player.transform.GetChild(1).transform.GetChild(0));
             return true;
         }
 
         return false;
+    }
+    
+    public void SetMoney(int value)
+    {
+        sliderMoney.value = player.currentMoney;
     }
 }

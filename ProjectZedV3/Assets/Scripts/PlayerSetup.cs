@@ -47,6 +47,7 @@ public class PlayerSetup : NetworkBehaviour {
             else
             {
                 ui.SetPlayer(GetComponent<Player>());
+                playerUIInstance.transform.GetChild(6).GetChild(0).GetComponent<ArmeShop>().SetPlayer(GetComponent<Player>());
             }
 
             GetComponent<Player>().SetupPlayer();
