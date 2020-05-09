@@ -16,13 +16,17 @@ public class Enemy : MonoBehaviour
     public int damage = 1;
     public int health = 5;
 
+    private Animator anim;
+
     private int id;
     
     void Start()
     {
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         GameObject nearestPlayer = null;
-        
+
+        anim = GetComponent<Animator>();
+
         float shortestDistance = Mathf.Infinity;
         
         foreach (GameObject player in players)
@@ -47,6 +51,7 @@ public class Enemy : MonoBehaviour
         {
             if (Vector3.Distance(transform.position, target.position) > 2.5f)
             {
+                anim.SetBool("Attack", false);
                 Vector3 dir = target.position - transform.position;
                 transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
             }
@@ -60,12 +65,17 @@ public class Enemy : MonoBehaviour
 
     void Attack()
     {
+        anim.SetBool("Attack", true);
         player.RpcTakeDamage(damage, transform.name);
     }
 
 
     public void DestroyTransform()
     {
+        anim.SetBool("Die", true);
         Destroy(gameObject);
     }
+
+    
+
 }
