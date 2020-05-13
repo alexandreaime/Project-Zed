@@ -13,6 +13,8 @@ public class PlayerShoot : NetworkBehaviour {
     private PlayerWeapon currentWeapon;
     private WeaponManager weaponManager;
 
+    public AudioSource testaudio;
+
 	void Start () {
 		if(cam == null)
         {
@@ -21,7 +23,8 @@ public class PlayerShoot : NetworkBehaviour {
         }
 
         weaponManager = GetComponent<WeaponManager>();
-	}
+        testaudio = GetComponent<AudioSource>();
+    }
 
     private void Update()
     {
@@ -52,10 +55,12 @@ public class PlayerShoot : NetworkBehaviour {
         {
             if (Input.GetButtonDown("Fire1"))
             {
+                InvokeRepeating("Audio", 0f, 3f/currentWeapon.fireRate);
                 InvokeRepeating("Shoot", 0f, 1f/currentWeapon.fireRate);
             }else if (Input.GetButtonUp("Fire1"))
             {
                 CancelInvoke("Shoot");
+                CancelInvoke("Audio");
             }
         }
     }
@@ -100,6 +105,7 @@ public class PlayerShoot : NetworkBehaviour {
             weaponManager.Reload();
             return;
         }
+        
 
         currentWeapon.bullets--;
 
@@ -144,6 +150,12 @@ public class PlayerShoot : NetworkBehaviour {
             weaponManager.Reload();
         }
     }
+    
+    private void Audio()
+    {
+        testaudio.Play();
+    }
+    
 
     [Command]
     void CmdPlayerShot(string _playerID, int _damage, string _sourceID)
