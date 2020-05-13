@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
@@ -19,7 +20,10 @@ public class Enemy : MonoBehaviour
     private Animator anim;
 
     private int id;
-    
+
+    Rigidbody m_Rigidbody;
+    Vector3 m_ZAxis;
+
     void Start()
     {
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
@@ -42,6 +46,8 @@ public class Enemy : MonoBehaviour
             target = nearestPlayer.transform;
             this.player = target.GetComponent<Player>();
         }
+
+        m_Rigidbody = GetComponent<Rigidbody>();
     }
 
 
@@ -69,10 +75,20 @@ public class Enemy : MonoBehaviour
         player.RpcTakeDamage(damage, transform.name);
     }
 
+    private IEnumerator DieAnim()
+    {
+        m_Rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+        anim.SetBool("Die", true);
+        yield return new WaitForSeconds(100.0f);
+    }
+
 
     public void DestroyTransform()
     {
-        anim.SetBool("Die", true);
+        //m_Rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+        StartCoroutine(DieAnim());
+        //anim.SetBool("Die", true);
+        //yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
     }
 
