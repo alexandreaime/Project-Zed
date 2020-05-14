@@ -7,8 +7,8 @@
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sci-Fi Automatic.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sci-Fi Automatic.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/17f880-abc00e0e38f19a0468.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/17f880-abc00e0e38f19a0468.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/17f880-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/17f880-mainStage.json" afterDir="false" />
@@ -140,7 +140,7 @@
       <workItem from="1587557486150" duration="18000" />
       <workItem from="1589364515231" duration="713000" />
       <workItem from="1589366041101" duration="2956000" />
-      <workItem from="1589450535587" duration="3212000" />
+      <workItem from="1589450535587" duration="4119000" />
     </task>
     <servers />
   </component>
