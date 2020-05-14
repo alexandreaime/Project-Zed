@@ -18,9 +18,11 @@ public class WeaponManager : NetworkBehaviour {
 
     public bool isReloading = false;
 
-	void Start () {
+    public AudioSource reload;
+
+    void Start () {
         EquipWeapon(primaryWeapon);
-	}
+    }
 
     public PlayerWeapon GetCurrentWeapon()
     {
@@ -58,7 +60,13 @@ public class WeaponManager : NetworkBehaviour {
             return;
         }
 
+        ReloadSound();
         StartCoroutine(Reload_Coroutine());
+    }
+
+    public void ReloadSound()
+    {
+        reload.Play();
     }
 
     public IEnumerator Reload_Coroutine()
