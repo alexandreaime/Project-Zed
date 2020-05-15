@@ -25,13 +25,30 @@ public class PlayerController : MonoBehaviour {
     private ConfigurableJoint joint;
     private Animator animator;
 
+    public float jmphg = 397.0f;
+
+    private bool canJump;
+    private Rigidbody selfRigidbody;
+
     private void Start()
     {
         motor = GetComponent<PlayerMotor>();
         joint = GetComponent<ConfigurableJoint>();
         animator = GetComponent<Animator>();
+        selfRigidbody = GetComponent<Rigidbody>();
         SetJointSettings(jointSpring);
     }
+
+
+    void FixedUpdate()
+    {
+        if (canJump)
+        {
+            canJump = false;
+            selfRigidbody.AddForce(Vector3.up * jmphg);
+        }
+    }
+
 
     private void Update()
     {
@@ -49,7 +66,12 @@ public class PlayerController : MonoBehaviour {
             return;
         }
 
-        if(Cursor.lockState != CursorLockMode.Locked)
+        if (Input.GetKeyDown("space"))
+        {
+            canJump = true;
+        }
+
+        if (Cursor.lockState != CursorLockMode.Locked)
         {
             Cursor.lockState = CursorLockMode.Locked;
         }
