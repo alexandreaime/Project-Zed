@@ -419,20 +419,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/ASSETSTORE/Low_Poly_Mini_Village/Prefabs
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/ASSETSTORE/Low_Poly_Mini_Village/Prefabs
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\phgad\Documents\GitHub\projectzed2\ProjectZedV3
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 208}
-    m_SelectedIDs: d0360000
-    m_LastClickedID: 14032
-    m_ExpandedIDs: 00000000c83000003a310000d63100002c3300009e330000263400008234000098340000f234000002350000d63600004a390000c43a000000ca9a3b
+    scrollPos: {x: 0, y: 132}
+    m_SelectedIDs: 58390000
+    m_LastClickedID: 14680
+    m_ExpandedIDs: 00000000c83000003a310000d63100002c3300002634000082340000f2340000d63600004a390000c43a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -582,10 +582,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 1492}
-      m_SelectedIDs: b2440000
-      m_LastClickedID: 17586
-      m_ExpandedIDs: 72fbffff98420000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: ce650000
+      m_LastClickedID: 26062
+      m_ExpandedIDs: 4c98ffffc2650000c4650000c6650000c8650000cc650000ce650000d0650000d2650000d4650000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -638,16 +638,16 @@ MonoBehaviour:
   m_ShowContextualTools: 0
   m_WindowGUID: 194371bde8f24f24d8915bce441a3479
   m_Gizmos: 1
-  m_SceneIsLit: 1
+  m_SceneIsLit: 0
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 59.50595, y: -69.11818, z: 44.483078}
+    m_Target: {x: 4.7839165, y: 3.0582268, z: 5.228831}
     speed: 2
-    m_Value: {x: 59.50595, y: -69.11818, z: 44.483078}
+    m_Value: {x: 4.7839165, y: 3.0582268, z: 5.228831}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -658,7 +658,7 @@ MonoBehaviour:
   m_SceneViewState:
     showFog: 1
     showMaterialUpdate: 0
-    showSkybox: 1
+    showSkybox: 0
     showFlares: 1
     showImageEffects: 1
     showParticleSystems: 1
@@ -676,13 +676,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.52568805, y: -0.026528412, z: 0.016455658, w: -0.85013855}
+    m_Target: {x: -0.04678579, y: -0.017384749, z: 0.00081389723, w: -0.9987628}
     speed: 2
-    m_Value: {x: -0.5243971, y: -0.026552299, z: 0.016415367, w: -0.8509014}
+    m_Value: {x: -0.0467827, y: -0.020380761, z: 0.0009542418, w: -0.9986967}
   m_Size:
-    m_Target: 129.30252
+    m_Target: 20.713507
     speed: 2
-    m_Value: 135.39531
+    m_Value: 19.821537
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -814,29 +814,4 @@ MonoBehaviour:
     y: 732
     width: 1497
     height: 269
-  m_ViewDataDictionary: {fileID: 0}
---- !u!114 &20
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12059, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEditor:UnityEditor.Experimental.TerrainAPI:PaintTextureTool
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Failed to load
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 320
-    height: 550
   m_ViewDataDictionary: {fileID: 0}
