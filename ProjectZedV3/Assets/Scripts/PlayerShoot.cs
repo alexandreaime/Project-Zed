@@ -1,4 +1,10 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Runtime.CompilerServices;
+using TMPro;
+using UnityEngine;
 using UnityEngine.Networking;
 
 [RequireComponent(typeof(WeaponManager))]
@@ -130,7 +136,8 @@ public class PlayerShoot : NetworkBehaviour {
                 if (enemy != null)
                 {
                     Player sourcePlayer = GameManager.GetPlayer(transform.name);
-                    enemy.DestroyTransform();
+                    enemy.DieAnim(5.0f);
+                    //enemy.DestroyTransform();
                     sourcePlayer.kills++;
                     money = 1;
                 }

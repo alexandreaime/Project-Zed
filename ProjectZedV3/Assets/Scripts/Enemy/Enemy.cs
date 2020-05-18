@@ -75,18 +75,22 @@ public class Enemy : MonoBehaviour
         player.RpcTakeDamage(damage, transform.name);
     }
 
-    private IEnumerator DieAnim()
+    public void DieAnim(float waitTime)
     {
         m_Rigidbody.constraints = RigidbodyConstraints.FreezeAll;
-        anim.SetBool("Die", true);
-        yield return new WaitForSeconds(100.0f);
+        speed = 0.0f;
+        anim.SetBool("Die", true);            //faire passer ce booléen a true déclenche l'anim de mort
+        //yield return new WaitForSeconds(5.0f);
+        Console.Write("yes");
     }
 
 
-    public void DestroyTransform()
+    public void DestroyTransform()   //fonction appelée dans playershoot
     {
+        //yield return StartCoroutine(DieAnim(5.0f));
+        //DieAnim(5.0f);
         //m_Rigidbody.constraints = RigidbodyConstraints.FreezeAll;
-        StartCoroutine(DieAnim());
+        //StartCoroutine(DieAnim());
         //anim.SetBool("Die", true);
         //yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
