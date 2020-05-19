@@ -5,6 +5,8 @@ using System.Collections.Specialized;
 using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
+//using UnityEngine.PhysicsModule;
+
 
 public class Enemy : MonoBehaviour
 {
@@ -22,10 +24,13 @@ public class Enemy : MonoBehaviour
     private int id;
 
     Rigidbody m_Rigidbody;
-    Vector3 m_ZAxis;
+    Vector3 m_YAxis;
+    CapsuleCollider caps;
 
     void Start()
     {
+        caps = GetComponent<CapsuleCollider>();
+
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         GameObject nearestPlayer = null;
 
@@ -48,12 +53,23 @@ public class Enemy : MonoBehaviour
         }
 
         m_Rigidbody = GetComponent<Rigidbody>();
+        //Set up vector for moving the Rigidbody in the y axis
+        m_YAxis = new Vector3(0, 5, 0);
     }
 
 
     void Update()
     {
-        if (player != null)
+        if (anim.GetBool("Die"))
+        {
+            m_Rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+            m_Rigidbody.angularVelocity = Vector3.zero;
+            speed = 0.0f;
+            damage = 0;
+            Destroy(caps);
+            transform.rotation = new Quaternion (0.0f, 0.0f, 0.0f, 0.0f);
+        }
+        if (player != null && !anim.GetBool("Die"))
         {
             if (Vector3.Distance(transform.position, target.position) > 2.5f)
             {
@@ -77,8 +93,10 @@ public class Enemy : MonoBehaviour
 
     public void DieAnim(float waitTime)
     {
-        m_Rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+        /*m_Rigidbody.constraints = RigidbodyConstraints.FreezeAll;
         speed = 0.0f;
+        damage = 0;
+        transform.Rotate(0.0f, 0.0f, 0.0f, Space.Self);*/
         anim.SetBool("Die", true);            //faire passer ce booléen a true déclenche l'anim de mort
         //yield return new WaitForSeconds(5.0f);
         Console.Write("yes");
@@ -87,12 +105,6 @@ public class Enemy : MonoBehaviour
 
     public void DestroyTransform()   //fonction appelée dans playershoot
     {
-        //yield return StartCoroutine(DieAnim(5.0f));
-        //DieAnim(5.0f);
-        //m_Rigidbody.constraints = RigidbodyConstraints.FreezeAll;
-        //StartCoroutine(DieAnim());
-        //anim.SetBool("Die", true);
-        //yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
     }
 
