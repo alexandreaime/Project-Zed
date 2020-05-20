@@ -62,8 +62,8 @@ public class Enemy : MonoBehaviour
     {
         if (anim.GetBool("Die"))
         {
-            m_Rigidbody.constraints = RigidbodyConstraints.FreezeAll;
-            m_Rigidbody.angularVelocity = Vector3.zero;
+            m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
+            //m_Rigidbody.angularVelocity = Vector3.zero;
             speed = 0.0f;
             damage = 0;
             Destroy(caps);
