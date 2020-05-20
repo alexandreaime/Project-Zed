@@ -75,6 +75,7 @@ public class WaveSpawner : MonoBehaviour
 
     void SpawnEnemy()
     {
+        //GameObject.FindGameObjectWithTag("Enemy").GetComponent<Transform>();
         Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
     }
 }
