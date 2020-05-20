@@ -2604,7 +2604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   matchSettings:
-    respawnTime: 3
+    respawnTime: 2
   sceneCamera: {fileID: 1633574967}
 --- !u!4 &1532861185
 Transform:
@@ -2632,9 +2632,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df2560eb245a0b04ab8e5341f7080e9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenWaves: 5
+  timeBetweenWaves: 6
   timeBetweenSpawnEnemy: 0.5
-  waveIndexMax: 20
+  waveIndexMax: 15
   enemyPrefab: {fileID: 3305920991726709325, guid: d58be77cba3adf54cb14b15052b86514,
     type: 3}
 --- !u!1001 &1559430557
