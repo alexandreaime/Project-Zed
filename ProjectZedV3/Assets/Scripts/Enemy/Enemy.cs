@@ -103,7 +103,7 @@ public class Enemy : MonoBehaviour
     }
 
 
-    public void DestroyTransform()   //fonction appelée dans playershoot
+    public void DestroyTransform()   //fonction appelée dans playershoot oupa lol 
     {
         Destroy(gameObject);
     }
