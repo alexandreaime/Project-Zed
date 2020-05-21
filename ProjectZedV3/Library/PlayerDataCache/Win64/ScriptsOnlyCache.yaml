@@ -51,11 +51,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -77,6 +72,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
     com.unity.multiplayer-hlapi.Runtime.dll:
+    - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
     - UnityEngine.Networking.NetworkManager
     - UnityEngine.Networking.NetworkManagerHUD
@@ -1642,5 +1638,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/LoginMenu.unity
   - Assets/Scenes/Lobby.unity
   - Assets/Scenes/MainLevel01.unity
-  playerPath: C:/Users/jeann/afs/ProjetZed/projectzed2/ProjectZedV3/Build/Project
+  playerPath: C:/Users/user/Desktop/NEW ZED/projectzed2/ProjectZedV3/Build2/Project
     Zed.exe
