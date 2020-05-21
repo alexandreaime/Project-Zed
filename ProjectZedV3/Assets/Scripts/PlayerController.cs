@@ -30,6 +30,14 @@ public class PlayerController : MonoBehaviour {
     private bool canJump;
     private Rigidbody selfRigidbody;
 
+
+    public float threashold = 0.1f;
+    bool isgrounded = true;
+    /*bool IsGrounded(): boolean 
+        {
+        return Physics.Raycast(transform.position, -Vector3.up, collider.bounds.extents.y /*+ threashold); //jouer avec le threashold
+        }*/
+
     private void Start()
     {
         motor = GetComponent<PlayerMotor>();
@@ -40,14 +48,14 @@ public class PlayerController : MonoBehaviour {
     }
 
 
-    void FixedUpdate()
+    /*void FixedUpdate()
     {
         if (canJump)
         {
             canJump = false;
             selfRigidbody.AddForce(Vector3.up * jmphg);
         }
-    }
+    }*/
 
 
     private void Update()
@@ -66,9 +74,9 @@ public class PlayerController : MonoBehaviour {
             return;
         }
 
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space") && isgrounded)
         {
-            canJump = true;
+            selfRigidbody.AddForce(Vector3.up * jmphg);
         }
 
         if (Cursor.lockState != CursorLockMode.Locked)
@@ -113,6 +121,29 @@ public class PlayerController : MonoBehaviour {
 
         motor.RotateCamera(_cameraRotationX);
     }
+
+    //make sure u replace "floor" with your gameobject name.on which player is standing
+    void OnCollisionEnter(Collision theCollision)
+    {
+        if (theCollision.gameObject.name == "Terrain")
+        {
+            isgrounded = true;
+        }
+    }
+
+    //consider when character is jumping .. it will exit collision.
+    void OnCollisionExit(Collision theCollision)
+    {
+        if (theCollision.gameObject.name == "Terrain")
+        {
+            isgrounded = false;
+        }
+    }
+
+
+
+
+
 
     private void SetJointSettings(float _jointSpring)
     {
