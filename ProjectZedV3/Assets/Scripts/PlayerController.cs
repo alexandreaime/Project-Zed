@@ -33,10 +33,7 @@ public class PlayerController : MonoBehaviour {
 
     public float threashold = 0.1f;
     bool isgrounded = true;
-    /*bool IsGrounded(): boolean 
-        {
-        return Physics.Raycast(transform.position, -Vector3.up, collider.bounds.extents.y /*+ threashold); //jouer avec le threashold
-        }*/
+
 
     private void Start()
     {
@@ -47,15 +44,6 @@ public class PlayerController : MonoBehaviour {
         SetJointSettings(jointSpring);
     }
 
-
-    /*void FixedUpdate()
-    {
-        if (canJump)
-        {
-            canJump = false;
-            selfRigidbody.AddForce(Vector3.up * jmphg);
-        }
-    }*/
 
 
     private void Update()
