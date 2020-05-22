@@ -475,7 +475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   damage: 1
-  health: 5
+  health: 15
 --- !u!114 &-9079635999714532884
 MonoBehaviour:
   m_ObjectHideFlags: 0
