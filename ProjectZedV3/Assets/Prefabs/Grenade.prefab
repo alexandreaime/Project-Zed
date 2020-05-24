@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8245187279862842570}
   - component: {fileID: 3950095732781146592}
   - component: {fileID: 3322044916220116528}
-  - component: {fileID: 2052431784242833263}
+  - component: {fileID: 7840867889872780491}
   m_Layer: 0
   m_Name: Grenade
   m_TagString: Untagged
@@ -124,7 +124,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2052431784242833263
+--- !u!114 &7840867889872780491
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,10 +133,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8917778664385690469}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8345d11a817733140ac5c913e57f11ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 43085981ef1b22f45b13ad613359b3db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sec: 1.5
-  boom: 0
-  cible: {fileID: 8979829336235992742, guid: d58be77cba3adf54cb14b15052b86514, type: 3}
-  particle: {fileID: 1307880671304760, guid: 43b1fc97ddfff884eb4aa99dd207a230, type: 3}
+  explosionEffet: {fileID: 1277290493548696, guid: 67da78c48c7c9254c90e41927aaea296,
+    type: 3}
+  delay: 3
+  explosionForce: 10
+  radius: 20
