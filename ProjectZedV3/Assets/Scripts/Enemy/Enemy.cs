@@ -19,7 +19,7 @@ public class Enemy : MonoBehaviour
     public int damage = 1;
     public int health = 5;
 
-    private Animator anim;
+    private static Animator anim;
 
     private int id;
 
@@ -103,7 +103,4 @@ public class Enemy : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
-    
-
 }

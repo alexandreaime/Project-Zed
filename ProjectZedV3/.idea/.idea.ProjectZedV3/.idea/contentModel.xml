@@ -49,7 +49,6 @@
           <e p="CameraFacingBillboard.cs" t="Include" />
           <e p="DataTranslator.cs" t="Include" />
           <e p="Enemy" t="Include">
-            <e p="Anim.cs" t="Include" />
             <e p="Enemy.cs" t="Include" />
             <e p="EnemyStill.cs" t="Include" />
             <e p="LookAtPlayer.cs" t="Include" />
