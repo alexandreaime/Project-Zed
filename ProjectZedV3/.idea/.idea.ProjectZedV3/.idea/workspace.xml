@@ -2,30 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b6608c5-b895-4276-869b-f9d0a98f8153" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectZedV3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectZedV3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ShopMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ShopMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Arme/EjectScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Arme/EjectScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Arme/EjectScript.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Arme/EjectScript.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainLevel01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainLevel01.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/c0367f-80a8edc061ccda2498.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/c0367f-80a8edc061ccda2498.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/c0367f-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/c0367f-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/43e760-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/43e760-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/2c/2c89b50a8c0d815449936990e4ccdc27" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/2c/2c89b50a8c0d815449936990e4ccdc27" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/2c/2c89b50a8c0d815449936990e4ccdc27.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/2c/2c89b50a8c0d815449936990e4ccdc27.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/84/8410b8e7349a2cb4c9e0b2ff95cb85e7" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/84/8410b8e7349a2cb4c9e0b2ff95cb85e7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/84/8410b8e7349a2cb4c9e0b2ff95cb85e7.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/84/8410b8e7349a2cb4c9e0b2ff95cb85e7.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/ab/abc00e0e38f19a046893c0e4f7fe874a" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ab/abc00e0e38f19a046893c0e4f7fe874a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/ab/abc00e0e38f19a046893c0e4f7fe874a.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ab/abc00e0e38f19a046893c0e4f7fe874a.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/d3/d320cef2dd58f274e959e82209516f66" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d3/d320cef2dd58f274e959e82209516f66" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/d3/d320cef2dd58f274e959e82209516f66.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d3/d320cef2dd58f274e959e82209516f66.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-firstpass.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-firstpass.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +148,7 @@
       <workItem from="1590017930515" duration="404000" />
       <workItem from="1590096424668" duration="219000" />
       <workItem from="1590320336295" duration="1877000" />
-      <workItem from="1590328394264" duration="1046000" />
+      <workItem from="1590328394264" duration="1687000" />
     </task>
     <servers />
   </component>

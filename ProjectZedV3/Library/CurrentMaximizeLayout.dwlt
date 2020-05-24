@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 679, y: 494}
-  m_MaxSize: {x: 14002, y: 14044}
+  m_MinSize: {x: 679, y: 472}
+  m_MaxSize: {x: 14000, y: 14022}
   vertical: 0
-  controlID: 10330
+  controlID: 8154
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -127,10 +127,10 @@ MonoBehaviour:
     y: 0
     width: 1497
     height: 947
-  m_MinSize: {x: 404, y: 494}
-  m_MaxSize: {x: 10002, y: 14044}
+  m_MinSize: {x: 404, y: 472}
+  m_MaxSize: {x: 10000, y: 14022}
   vertical: 1
-  controlID: 10331
+  controlID: 8155
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 222}
   m_MaxSize: {x: 8004, y: 4022}
   vertical: 0
-  controlID: 10300
+  controlID: 8125
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -213,7 +213,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: b023ffff7c26ffffa026ffff70fbffff
+      m_ExpandedIDs: 76eafeff8aebfeffdef5ffff72f6ffff70fbffffce4f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -296,14 +296,14 @@ MonoBehaviour:
   m_Gizmos: 1
   m_SceneIsLit: 0
   m_SceneLighting: 1
-  m_2DMode: 0
+  m_2DMode: 1
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.3433499, y: 158.08455, z: 111.0936}
+    m_Target: {x: 550.09344, y: 237.05931, z: 44.5}
     speed: 2
-    m_Value: {x: -0.3433499, y: 158.08455, z: 111.0936}
+    m_Value: {x: 550.09344, y: 237.05931, z: 44.5}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -332,17 +332,17 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.026126096, y: 0.8502739, z: -0.52401334, w: 0.04237269}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: 0.026125656, y: 0.8502596, z: -0.5240045, w: 0.042371977}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 107.30234
+    m_Target: 544.44965
     speed: 2
-    m_Value: 107.30234
+    m_Value: 544.44965
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5
@@ -357,7 +357,7 @@ MonoBehaviour:
     m_DynamicClip: 1
     m_OcclusionCulling: 0
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: 0.050184302, y: 0.76488227, z: -0.06001389, w: 0.6394265}
+  m_LastSceneViewRotation: {x: -0.0038552291, y: 0.9556244, z: 0.012614302, w: 0.2943525}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -456,20 +456,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Arme
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Arme
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\user\Desktop\NEW ZED\projectzed2\ProjectZedV3
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 53}
-    m_SelectedIDs: 983c0000
-    m_LastClickedID: 15512
-    m_ExpandedIDs: 00000000dc3000004e310000ec3100009c3200004833000046340000a634000016350000043700007e390000fa3a0000923c0000
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: a0310000
+    m_LastClickedID: 12704
+    m_ExpandedIDs: 00000000de300000ee3100009e3200004a33000048340000a834000018350000063700007e390000fa3a0000923c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -497,7 +497,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000dc3000004e310000ec3100009c3200004833000046340000a634000016350000043700007e390000fa3a0000923c0000
+    m_ExpandedIDs: 00000000de30000050310000ee3100009e3200004a33000048340000a834000018350000063700007e390000fa3a0000923c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -522,8 +522,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: bc3d0000
+    m_LastClickedInstanceID: 15804
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000000000000b03c0000
     m_RenameOverlay:
@@ -641,5 +641,5 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: -1
+  m_LastInspectedObjectInstanceID: 15804
   m_LastVerticalScrollValue: 0
