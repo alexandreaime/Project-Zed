@@ -141,3 +141,4 @@ MonoBehaviour:
   delay: 3
   explosionForce: 10
   radius: 20
+  enemy: {fileID: 8979829336235992742, guid: d58be77cba3adf54cb14b15052b86514, type: 3}

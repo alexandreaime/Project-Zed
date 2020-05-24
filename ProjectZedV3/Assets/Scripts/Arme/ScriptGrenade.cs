@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Enemy))]
 public class ScriptGrenade : MonoBehaviour
 {
     
@@ -10,10 +12,15 @@ public class ScriptGrenade : MonoBehaviour
 
     public float explosionForce = 10f;
     public float radius = 20f;
+
+    private Rigidbody rb;
+    private Collider[] Enemies;
+    public Enemy enemy;
     
     void Start()
     {
         Invoke("Explode", delay);
+        rb = GetComponent<Rigidbody>();
     }
 
     private void Explode()
@@ -29,6 +36,14 @@ public class ScriptGrenade : MonoBehaviour
         }
 
         Instantiate(explosionEffet, transform.position, transform.rotation);
+        Enemies = Physics.OverlapSphere(transform.position, 15);
+        foreach (Collider people in Enemies)
+        {
+            if (people.tag == "Enemy")
+            {
+                Destroy(people.gameObject);
+            }
+        }
         Destroy(gameObject);
     }
 }
