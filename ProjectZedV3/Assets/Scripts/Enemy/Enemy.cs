@@ -19,7 +19,7 @@ public class Enemy : MonoBehaviour
     public int damage = 1;
     public int health = 5;
 
-    private static Animator anim;
+    private Animator anim;
 
     private int id;
 

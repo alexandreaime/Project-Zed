@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/ASSETSTORE/GRENADE/Scene.unity
+- path: Assets/Scenes/MainLevel01.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
