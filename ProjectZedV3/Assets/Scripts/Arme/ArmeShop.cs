@@ -6,11 +6,14 @@ using UnityEngine.UI;
 public class ArmeShop : MonoBehaviour
 {
     private Player player;
-    public Transform arme1Prefab, arme2Prefab;
+    public Transform arme1Prefab, arme2Prefab, arme3Prefab;
     public Slider sliderMoney;
     
     private int costArme1 = 10;
     private int costArme2 = 20;
+    private int costArme3 = 5;
+    
+    public static int grenaderestante = 3;
 
     public void SetPlayer(Player player)
     {
@@ -31,6 +34,12 @@ public class ArmeShop : MonoBehaviour
     public void SelectAchat2()
     {
         buyArme(arme2Prefab, arme2Prefab.name, costArme2);
+    }
+    
+    public void SelectAchat3()
+    {
+        EjectScript.FiveGre();
+        buyArme(arme3Prefab, arme3Prefab.name, costArme3);
     }
 
     private void buyArme(Transform arme, string name, int cost)

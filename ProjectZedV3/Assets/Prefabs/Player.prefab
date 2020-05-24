@@ -20327,7 +20327,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d320cef2dd58f274e959e82209516f66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arme1Prefab: {fileID: 0}
+  arme2Prefab: {fileID: 0}
+  arme3Prefab: {fileID: 0}
+  sliderMoney: {fileID: 0}
   grenade: {fileID: 8917778664385690469, guid: dffe854724308e94e8c64168eb2ee927, type: 3}
+  ultimate: {fileID: 4996956981706239563, guid: 0f0bab6a5e5fd294aa9e3f768ca31fa3,
+    type: 3}
   force: 800
   audioGre: {fileID: 7046738552996077139}
 --- !u!82 &7046738552996077139
