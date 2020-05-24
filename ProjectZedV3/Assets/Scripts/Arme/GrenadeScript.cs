@@ -10,7 +10,7 @@ public class GrenadeScript : MonoBehaviour
     public bool boom = false;
     public Enemy cible;
 
-    /*[SerializeField] GameObject particle;*/
+    [SerializeField] GameObject particle;
 
     IEnumerator Explosion()
     {
@@ -31,8 +31,10 @@ public class GrenadeScript : MonoBehaviour
 
         if (other.CompareTag("Enemy"))
         {
-            cible.DieAnim(2.0f);
+            Destroy(other);
         }
 
+        Instantiate(particle, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }
