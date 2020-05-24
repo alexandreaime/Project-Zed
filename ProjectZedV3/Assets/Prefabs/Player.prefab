@@ -9733,6 +9733,7 @@ GameObject:
   - component: {fileID: 4229491871393250}
   - component: {fileID: 114125725461005558}
   - component: {fileID: 114865632833176342}
+  - component: {fileID: -4514299956380668085}
   - component: {fileID: 5991477898321087819}
   - component: {fileID: 135280238588857388}
   - component: {fileID: 54980647596046572}
@@ -9824,6 +9825,18 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 10
   m_InterpolateMovement: 1
+--- !u!114 &-4514299956380668085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647541062301388}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05632aa94212829499d36aa21d887d9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &5991477898321087819
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9902,6 +9915,7 @@ MonoBehaviour:
   jointSpring: 12
   jointMaxForce: 25
   jmphg: 650
+  threashold: 0.1
 --- !u!114 &114754604817121724
 MonoBehaviour:
   m_ObjectHideFlags: 0

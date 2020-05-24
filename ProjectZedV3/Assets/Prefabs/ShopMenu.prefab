@@ -1250,12 +1250,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49d6d24fc887c5b41bed28755c717d9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arme1Prefab: {fileID: 7639133616373208702, guid: d6397409897e3a94d871ff2ef876c5dc,
+  arme1Prefab: {fileID: 101368699763171834, guid: dffe854724308e94e8c64168eb2ee927,
     type: 3}
   arme2Prefab: {fileID: 1256601334553287955, guid: 0f0bab6a5e5fd294aa9e3f768ca31fa3,
     type: 3}
   sliderMoney: {fileID: 0}
-  msg: {fileID: 0}
 --- !u!1 &6296153756688340743
 GameObject:
   m_ObjectHideFlags: 0
