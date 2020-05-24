@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Enemy))]
 public class GrenadeScript : MonoBehaviour
 {
 
     public float sec = 2f;
     public bool boom = false;
-    public GameObject cible;
+    public Enemy cible;
 
     /*[SerializeField] GameObject particle;*/
 
@@ -30,7 +31,7 @@ public class GrenadeScript : MonoBehaviour
 
         if (other.CompareTag("Enemy"))
         {
-            Destroy(other.gameObject);
+            cible.DieAnim(2.0f);
         }
 
     }

@@ -93,10 +93,6 @@ public class Enemy : MonoBehaviour
 
     public void DieAnim(float waitTime)
     {
-        /*m_Rigidbody.constraints = RigidbodyConstraints.FreezeAll;
-        speed = 0.0f;
-        damage = 0;
-        transform.Rotate(0.0f, 0.0f, 0.0f, Space.Self);*/
         anim.SetBool("Die", true);            //faire passer ce booléen a true déclenche l'anim de mort
         //yield return new WaitForSeconds(5.0f);
         Console.Write("yes");
