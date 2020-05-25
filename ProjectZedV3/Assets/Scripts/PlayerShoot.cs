@@ -136,7 +136,7 @@ public class PlayerShoot : NetworkBehaviour {
                 if (enemy != null)
                 {
                     Player sourcePlayer = GameManager.GetPlayer(transform.name);
-                    enemy.DieAnim(5.0f);
+                    enemy.DieAnim(5.0f, currentWeapon.damage);
                     //enemy.DestroyTransform();
                     sourcePlayer.kills++;
                     money = 1;

@@ -41,7 +41,7 @@ public class ScriptGrenade : MonoBehaviour
             if (people.tag == "Enemy")
             {
                 this.enemy = people.GetComponent<Enemy>();
-                enemy.DieAnim(5f);
+                enemy.DieAnim(5f, 50);
                 //Destroy(people.gameObject);
             }
         }

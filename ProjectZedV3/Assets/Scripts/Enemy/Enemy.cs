@@ -91,11 +91,14 @@ public class Enemy : MonoBehaviour
         player.RpcTakeDamage(damage, transform.name);
     }
 
-    public void DieAnim(float waitTime)
+    public void DieAnim(float waitTime, int damage)
     {
-        anim.SetBool("Die", true);            //faire passer ce booléen a true déclenche l'anim de mort
-        //yield return new WaitForSeconds(5.0f);
-        Console.Write("yes");
+        health -= damage;
+        if (health <= 0)
+        {
+            anim.SetBool("Die", true); //faire passer ce booléen a true déclenche l'anim de mort
+            //yield return new WaitForSeconds(5.0f);
+        }
     }
 
 
