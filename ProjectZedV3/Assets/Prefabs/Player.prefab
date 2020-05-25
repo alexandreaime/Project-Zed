@@ -20334,6 +20334,7 @@ MonoBehaviour:
   grenade: {fileID: 8917778664385690469, guid: dffe854724308e94e8c64168eb2ee927, type: 3}
   ultimate: {fileID: 4996956981706239563, guid: 0f0bab6a5e5fd294aa9e3f768ca31fa3,
     type: 3}
+  heal: {fileID: 4127998705290056701, guid: e469054e22df8f742b14f44b248424cc, type: 3}
   force: 800
   audioGre: {fileID: 7046738552996077139}
 --- !u!82 &7046738552996077139

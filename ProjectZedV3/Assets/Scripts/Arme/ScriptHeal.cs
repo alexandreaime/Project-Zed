@@ -2,27 +2,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class ScriptGrenade : MonoBehaviour
+public class ScriptHeal : MonoBehaviour
 {
     
     public GameObject explosionEffet;
-    public float delay = 3f;
+    public float delay = 2f;
 
     public float explosionForce = 10f;
-    public float radius = 20f;
+    public float radius = 60f;
 
     private Rigidbody rb;
     private Collider[] Enemies;
-    private Enemy enemy;
+    public Enemy enemy;
     private Player player;
 
     void Start()
     {
-        Invoke("Explode", delay);
+        Invoke("Heal", delay);
         rb = GetComponent<Rigidbody>();
     }
 
-    private void Explode()
+    private void Heal()
     {
         Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
 
@@ -31,18 +31,18 @@ public class ScriptGrenade : MonoBehaviour
             Rigidbody rig = near.GetComponent<Rigidbody>();
             
             if (rig != null)
-            rig.AddExplosionForce(explosionForce, transform.position, radius, 1f, ForceMode.Impulse);
+                rig.AddExplosionForce(explosionForce, transform.position, radius, 1f, ForceMode.Impulse);
         }
 
         Instantiate(explosionEffet, transform.position, transform.rotation);
         Enemies = Physics.OverlapSphere(transform.position, 15);
         foreach (Collider people in Enemies)
         {
-            if (people.tag == "Enemy")
+            if (people.tag == "Player")
             {
-                this.enemy = people.GetComponent<Enemy>();
-                enemy.DieAnim(5f);
-                //Destroy(people.gameObject);
+                this.player = people.GetComponent<Player>();
+                player.RpcTakeHeal(50, transform.name);
+                Debug.Log("jvais te heal");
             }
         }
         Destroy(gameObject);

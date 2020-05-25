@@ -302,6 +302,7 @@ MonoBehaviour:
   ammoText: {fileID: 114558137327181990}
   pauseMenu: {fileID: 1126366523479954}
   scoreboard: {fileID: 1088448608842746}
+  shopMenu: {fileID: 2038747135151335125}
 --- !u!1 &1176387219801612
 GameObject:
   m_ObjectHideFlags: 0
@@ -1970,6 +1971,11 @@ PrefabInstance:
       propertyPath: shopButtonUI
       value: 
       objectReference: {fileID: 7774827864889588270}
+    - target: {fileID: 3136297915244396358, guid: 2c89b50a8c0d815449936990e4ccdc27,
+        type: 3}
+      propertyPath: shopMenu
+      value: 
+      objectReference: {fileID: 2038747135151335125}
     - target: {fileID: 3328473193096597792, guid: 2c89b50a8c0d815449936990e4ccdc27,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2043,6 +2049,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c89b50a8c0d815449936990e4ccdc27, type: 3}
+--- !u!1 &2038747135151335125 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6296153756688340743, guid: 2c89b50a8c0d815449936990e4ccdc27,
+    type: 3}
+  m_PrefabInstance: {fileID: 5416559093201252818}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &5434985309120690742 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 20136025560370148, guid: 2c89b50a8c0d815449936990e4ccdc27,
@@ -2055,7 +2067,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 5416559093201252818}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2038747135151335125}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 064e34d184695c34b8eee9e230241f6d, type: 3}

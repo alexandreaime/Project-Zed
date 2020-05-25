@@ -14,6 +14,9 @@ public class PlayerUI : MonoBehaviour {
 
     [SerializeField]
     private GameObject scoreboard;
+    
+    [SerializeField]
+    private GameObject shopMenu;
 
     private Player player;
     private PlayerController controller;
@@ -47,6 +50,15 @@ public class PlayerUI : MonoBehaviour {
         }else if (Input.GetKeyUp(KeyCode.Tab))
         {
             scoreboard.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            shopMenu.SetActive(true);
+        }
+        else if (Input.GetKeyUp(KeyCode.B))
+        {
+            shopMenu.SetActive(false);
+            ShopMenu.isOn = shopMenu.activeSelf;
         }
     }
 

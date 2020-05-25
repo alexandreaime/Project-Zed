@@ -117,6 +117,30 @@ public class Player : NetworkBehaviour {
         }
     }
     
+    public void RpcTakeHeal(int _amount, string _sourceID)
+    {
+        if (isDead)
+        {
+            return;
+        }
+        
+        if(currentHealth >= 100)
+        {
+            return;
+        }
+
+        if (currentHealth + _amount > 100)
+        {
+            currentHealth = 100;
+        }
+        else
+        {
+            currentHealth += _amount;
+        }
+        Debug.Log("voilaaaa");
+        Debug.Log(transform.name + " a maintenant : " + currentHealth + " points de vie.");
+    }
+    
     /*private void Die(string _sourceID)
     {
         isDead = true;

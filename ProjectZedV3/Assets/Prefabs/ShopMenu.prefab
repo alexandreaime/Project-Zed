@@ -1464,7 +1464,6 @@ MonoBehaviour:
   arme3Prefab: {fileID: 101368699763171834, guid: dffe854724308e94e8c64168eb2ee927,
     type: 3}
   sliderMoney: {fileID: 0}
-  grenaderestante: 4
 --- !u!1 &6296153756688340743
 GameObject:
   m_ObjectHideFlags: 0

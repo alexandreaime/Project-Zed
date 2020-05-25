@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour {
 
     private void Update()
     {
-        if (PauseMenu.isOn == true)
+        if (PauseMenu.isOn == true | ShopMenu.isOn == true)
         {
             if (Cursor.lockState != CursorLockMode.None)
             {
