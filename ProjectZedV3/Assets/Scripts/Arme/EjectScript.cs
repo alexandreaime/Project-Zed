@@ -42,9 +42,14 @@ public class EjectScript : ArmeShop
     {
         if (Input.GetButtonDown("Ultimate"))
         {
-            GameObject Go = Instantiate(ultimate, transform.position, Quaternion.identity);
+            if (ultirestant != 0)
+            {
+                GameObject Go = Instantiate(ultimate, transform.position, Quaternion.identity);
 
                 Go.GetComponent<Rigidbody>().AddForce(transform.TransformDirection(Vector3.forward) * force);
+
+                ultirestant = ultirestant - 1;
+            }
         }
     }
     
@@ -52,14 +57,29 @@ public class EjectScript : ArmeShop
     {
         if (Input.GetButtonDown("Heal"))
         {
-            GameObject Go = Instantiate(heal, transform.position, Quaternion.identity);
+            if (healrestant != 0)
+            {
+                GameObject Go = Instantiate(heal, transform.position, Quaternion.identity);
 
-            Go.GetComponent<Rigidbody>().AddForce(transform.TransformDirection(Vector3.forward) * force);
+                Go.GetComponent<Rigidbody>().AddForce(transform.TransformDirection(Vector3.forward) * force);
+
+                healrestant = healrestant - 1;
+            }
         }
     }
     
     public static void FiveGre()
     {
         grenaderestante = grenaderestante + 5;
+    }
+    
+    public static void NewUlt()
+    {
+        ultirestant = ultirestant + 1;
+    }
+    
+    public static void NewHeal()
+    {
+        healrestant = healrestant + 1;
     }
 }
