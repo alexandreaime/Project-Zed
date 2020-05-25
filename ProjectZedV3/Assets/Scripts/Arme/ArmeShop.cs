@@ -17,6 +17,10 @@ public class ArmeShop : MonoBehaviour
     public static int ultirestant = 1;
     public static int healrestant = 1;
 
+    public static int Healeru => healrestant;
+    public static int Ulteru => ultirestant;
+    public static int Naderu => grenaderestante;
+
     public void SetPlayer(Player player)
     {
         this.player = player;

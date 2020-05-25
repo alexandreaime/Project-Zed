@@ -37,6 +37,7 @@
             <e p="DCF_RuntimeData.txt" t="Include" />
           </e>
         </e>
+        <e p="Dialo.cs" t="Include" />
         <e p="Editor Default Resources" t="Include">
           <e p="Database Control Free" t="Include">
             <e p="DCF_EditorData.txt" t="Include" />
