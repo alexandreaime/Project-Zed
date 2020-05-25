@@ -2045,7 +2045,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back to Main Menu
+  m_Text: I Don't Want To Die...
 --- !u!222 &1301455206
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2287,8 +2287,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 511, y: -457}
-  m_SizeDelta: {x: 290.1, y: 75.6}
+  m_AnchoredPosition: {x: 219.5, y: -461}
+  m_SizeDelta: {x: 341.2, y: 75.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1441357190
 MonoBehaviour:
@@ -2346,7 +2346,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1441357190}
-        m_MethodName: BackToMenu
+        m_MethodName: QuittheGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

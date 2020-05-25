@@ -89,7 +89,6 @@
             <e p="SwitchArme.cs" t="Include" />
           </e>
           <e p="Audiotest.cs" t="Include" />
-          <e p="Back2Menu.cs" t="Include" />
           <e p="CameraFacingBillboard.cs" t="Include" />
           <e p="DataTranslator.cs" t="Include" />
           <e p="Enemy" t="Include">
@@ -99,6 +98,7 @@
             <e p="WaveSpawner.cs" t="Include" />
             <e p="Waypoints.cs" t="Include" />
           </e>
+          <e p="Fuir.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="HostGame.cs" t="Include" />
           <e p="JoinGame.cs" t="Include" />
