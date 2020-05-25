@@ -90,11 +90,24 @@ public class PlayerShoot : NetworkBehaviour {
     {
         RpcDoHitEffect(_pos, _normal);
     }
+    
+    [Command]
+    void CmdOnHit2(Vector3 _pos, Vector3 _normal)
+    {
+        RpcDoHitEffect2(_pos, _normal);
+    }
 
     [ClientRpc]
     void RpcDoHitEffect(Vector3 _pos, Vector3 _normal)
     {
         GameObject _hitEffect = (GameObject)Instantiate(weaponManager.GetCurrentGraphics().hitEffectPrefab, _pos, Quaternion.LookRotation(_normal));
+        Destroy(_hitEffect, 2f);
+    }
+    
+    [ClientRpc]
+    void RpcDoHitEffect2(Vector3 _pos, Vector3 _normal)
+    {
+        GameObject _hitEffect = (GameObject)Instantiate(weaponManager.GetCurrentGraphics().hitEffectPrefab2, _pos, Quaternion.LookRotation(_normal));
         Destroy(_hitEffect, 2f);
     }
 
@@ -127,11 +140,13 @@ public class PlayerShoot : NetworkBehaviour {
             
             if(_hit.collider.tag == "Player")
             {
+                CmdOnHit(_hit.point, _hit.normal);
                 CmdPlayerShot(_hit.collider.name, currentWeapon.damage, transform.name);
                 money = 10;
             }
             else if (_hit.collider.tag == "Enemy")
             {
+                CmdOnHit(_hit.point, _hit.normal);
                 Enemy enemy = _hit.transform.GetComponent<Enemy>();
                 if (enemy != null)
                 {
@@ -148,8 +163,8 @@ public class PlayerShoot : NetworkBehaviour {
                 player.currentMoney = player.maxMoney;
             else
                 player.currentMoney += money;
-
-            CmdOnHit(_hit.point, _hit.normal);
+            
+            CmdOnHit2(_hit.point, _hit.normal);
         }
 
         if(currentWeapon.bullets <= 0)

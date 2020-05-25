@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionEffet: {fileID: 100004, guid: 3af6f68141914ca43ba39b2403757bd0, type: 3}
-  delay: 2
+  delay: 1.9
   explosionForce: 1
   radius: 60
   enemy: {fileID: 8979829336235992742, guid: d58be77cba3adf54cb14b15052b86514, type: 3}

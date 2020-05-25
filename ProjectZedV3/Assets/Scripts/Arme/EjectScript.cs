@@ -11,6 +11,11 @@ public class EjectScript : ArmeShop
     [SerializeField] int force = 800;
 
     public AudioSource audioGre;
+    public AudioSource audioBoom;
+    public AudioSource audioElec;
+    public AudioSource audioHeal;
+    public AudioSource waitElec;
+    public AudioSource waitHeal;
 
 
     void Update()
@@ -29,8 +34,10 @@ public class EjectScript : ArmeShop
                 GameObject Go = Instantiate(grenade, transform.position, Quaternion.identity);
 
                 Go.GetComponent<Rigidbody>().AddForce(transform.TransformDirection(Vector3.forward) * force);
-                audioGre.Play();
                 
+                audioGre.Play();
+                audioBoom.Play();
+
                 grenaderestante = grenaderestante - 1;
                 
                 Debug.Log("il te reste " + grenaderestante + " grenades");
@@ -47,6 +54,9 @@ public class EjectScript : ArmeShop
                 GameObject Go = Instantiate(ultimate, transform.position, Quaternion.identity);
 
                 Go.GetComponent<Rigidbody>().AddForce(transform.TransformDirection(Vector3.forward) * force);
+                
+                waitElec.Play();
+                audioElec.Play();
 
                 ultirestant = ultirestant - 1;
             }
@@ -62,6 +72,9 @@ public class EjectScript : ArmeShop
                 GameObject Go = Instantiate(heal, transform.position, Quaternion.identity);
 
                 Go.GetComponent<Rigidbody>().AddForce(transform.TransformDirection(Vector3.forward) * force);
+
+                waitHeal.Play();
+                audioHeal.Play();
 
                 healrestant = healrestant - 1;
             }

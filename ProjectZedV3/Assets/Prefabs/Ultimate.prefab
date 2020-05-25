@@ -236,9 +236,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionEffet: {fileID: 1628744458893394, guid: e243632bb3aff9549abdcfcc2ef0c4f0,
     type: 3}
-  delay: 3
+  delay: 2.5
   explosionForce: 20
-  radius: 60
+  radius: 100
 --- !u!54 &1962091570619080124
 Rigidbody:
   m_ObjectHideFlags: 0
