@@ -12,6 +12,15 @@
           <e p="Hand painted trees" t="Include">
             <e p="read me.txt" t="Include" />
           </e>
+          <e p="Tazo_fx" t="Include">
+            <e p="Script" t="Include">
+              <e p="BillBoard.cs" t="Include" />
+              <e p="button_target.cs" t="Include" />
+              <e p="demo.cs" t="Include" />
+              <e p="tazo_rotate.cs" t="Include" />
+              <e p="tazo_UVScroller.cs" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="Database Control Free" t="Include">
           <e p="Demos" t="Include">

@@ -137,7 +137,6 @@ public class Player : NetworkBehaviour {
         {
             currentHealth += _amount;
         }
-        Debug.Log("voilaaaa");
         Debug.Log(transform.name + " a maintenant : " + currentHealth + " points de vie.");
     }
     

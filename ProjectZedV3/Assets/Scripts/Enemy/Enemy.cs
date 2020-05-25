@@ -93,11 +93,14 @@ public class Enemy : MonoBehaviour
 
     public void DieAnim(float waitTime, int damage)
     {
+        int money = 5;
         health -= damage;
         if (health <= 0)
         {
             anim.SetBool("Die", true); //faire passer ce booléen a true déclenche l'anim de mort
             //yield return new WaitForSeconds(5.0f);
+            Player sourcePlayer = GameManager.GetPlayer(player.name);
+            sourcePlayer.kills++;
         }
     }
 

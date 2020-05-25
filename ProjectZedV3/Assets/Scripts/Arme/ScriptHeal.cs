@@ -42,7 +42,6 @@ public class ScriptHeal : MonoBehaviour
             {
                 this.player = people.GetComponent<Player>();
                 player.RpcTakeHeal(50, transform.name);
-                Debug.Log("jvais te heal");
             }
         }
         Destroy(gameObject);
