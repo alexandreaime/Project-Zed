@@ -27,8 +27,10 @@ public class Enemy : MonoBehaviour
     Vector3 m_YAxis;
     CapsuleCollider caps;
 
-    void Start()
+
+    void Update()
     {
+        
         caps = GetComponent<CapsuleCollider>();
 
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
@@ -55,11 +57,8 @@ public class Enemy : MonoBehaviour
         m_Rigidbody = GetComponent<Rigidbody>();
         //Set up vector for moving the Rigidbody in the y axis
         m_YAxis = new Vector3(0, 5, 0);
-    }
-
-
-    void Update()
-    {
+        
+        
         if (anim.GetBool("Die"))
         {
             m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotation;

@@ -10,8 +10,8 @@ public class LookAtPlayer : MonoBehaviour
 
     float speed = 50.0f;
 
-    // Start is called before the first frame update
-    void Start()
+    // Update is called once per frame
+    void Update()
     {
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         GameObject nearestPlayer = null;
@@ -31,11 +31,6 @@ public class LookAtPlayer : MonoBehaviour
             target = nearestPlayer.transform;
             this.player = target.GetComponent<Player>();
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         transform.LookAt(target.position);
     }
 }
