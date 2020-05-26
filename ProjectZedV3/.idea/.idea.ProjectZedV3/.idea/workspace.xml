@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e1fe1a3-8e34-4015-a127-bfd516a29373" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/LookAtPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/LookAtPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectZedV3/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectZedV3/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectZedV3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectZedV3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SplashScreenCache/a0/a08bcce57d2052ca03e7db63d6cedc2c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SplashScreenCache/f0/f0082032554f4e7cc545c62dfbe9d083" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/4c/4cdc5d315af47cf49b6ee489ed1ff788" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4c/4cdc5d315af47cf49b6ee489ed1ff788" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/5d/5d1ca1717fa099a44aaaada4f13f14b6" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5d/5d1ca1717fa099a44aaaada4f13f14b6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/49/49d6d24fc887c5b41bed28755c717d9a" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/49/49d6d24fc887c5b41bed28755c717d9a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-firstpass.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-firstpass.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,15 +95,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Arme/ScriptGrenade.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Arme/ScriptHeal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Arme/ArmeShop.cs" />
         <option value="$PROJECT_DIR$/Assets/Dialo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponGraphics.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerShoot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Arme/EjectScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Back2Menu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fuir.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/LookAtPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Arme/ArmeShop.cs" />
       </list>
     </option>
   </component>
@@ -141,7 +149,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7b6608c5-b895-4276-869b-f9d0a98f8153" name="Default Changelist" comment="" />
+      <changelist id="3e1fe1a3-8e34-4015-a127-bfd516a29373" name="Default Changelist" comment="" />
       <created>1587467069154</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -163,6 +171,7 @@
       <workItem from="1590320336295" duration="1877000" />
       <workItem from="1590328394264" duration="1687000" />
       <workItem from="1590347457812" duration="10362000" />
+      <workItem from="1590495678607" duration="215000" />
     </task>
     <servers />
   </component>
@@ -194,19 +203,6 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs</url>
-          <line>59</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" initialLine="59">
-            <startOffsets>
-              <option value="1564" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1596" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
